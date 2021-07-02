@@ -1,5 +1,5 @@
 import React from 'react'
-// import data from '.../data.json'
+import data from '../data.json'
 
 const Nav = (props) => {
 
@@ -8,10 +8,10 @@ const Nav = (props) => {
     return (
         <div>
             <h2>The Planets</h2>
-            <ul>
-               
-                
-            </ul>
+           {
+data.map((data) =>
+<div>{data.name}</div> ) 
+ }
             
         </div>
     )
