@@ -19,7 +19,7 @@ const Nav = (props) => {
 //   "Uranus",
 //   "Neptune"
 // ];
-const [hamburgermenu , setHamburgerMenu] = useState (true)
+const [hamburgermenu , setHamburgerMenu] = useState (false)
 
 const toggleHamburgerMenu = () => {
   hamburgermenu ? setHamburgerMenu(false) : setHamburgerMenu(true); 
