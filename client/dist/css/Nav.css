@@ -1,0 +1,21 @@
+p {
+  color: #fff;
+}
+
+nav {
+  margin: 24px 16px;
+}
+
+.nav-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-title {
+  font-size: 100px;
+}
+/*# sourceMappingURL=Nav.css.map */

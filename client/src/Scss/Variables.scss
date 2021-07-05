@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600&display=swap');
+
+
+//text variables
+$text-color:#fff;
+//Nav variables 
+
+$nav-title-m:36px;
+
+
+@mixin rowspacebetween {
+  display: flex;
+justify-content: space-between;
+align-items: center;
+}

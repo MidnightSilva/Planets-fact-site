@@ -1,0 +1,35 @@
+@import "./Variables.scss";
+
+p{
+    color:$text-color;
+}
+
+nav{
+    padding: 1px 18px;
+    margin: 0;
+}
+.nav-top{
+
+@include rowspacebetween ();
+
+}
+.nav-title{
+    font-size:$nav-title-m;
+    font-family: Antonio;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: 36px;
+letter-spacing: -1.05px;
+text-transform: uppercase
+
+}
+.hamburgerMenu{   
+    width: 24px;
+height: 17px;}
+// .nav-items{
+
+// }
+//     .items{
+
+//     }

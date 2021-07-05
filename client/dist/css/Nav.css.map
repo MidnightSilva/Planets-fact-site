@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,CAAC,CAAA;EACG,KAAK,ECHG,IAAI;CDIf;;AAED,AAAA,GAAG,CAAA;EACC,MAAM,EAAE,SAAS;CACpB;;AACD,AAAA,QAAQ,CAAA;ECLN,OAAO,EAAE,IAAI;EACf,eAAe,EAAE,aAAa;CDM7B;;AACD,AAAA,UAAU,CAAA;EACN,SAAS,EAAC,KAAK;CAElB",
+    "sources": [
+        "../../src/Scss/Nav.scss",
+        "../../src/Scss/Variables.scss"
+    ],
+    "names": [],
+    "file": "Nav.css"
+}
