@@ -1,5 +1,6 @@
 import hamburgerMenuDisabled from '../assets/hamburgerMenuFaded.svg'
 import hamburgerMenu from "../assets/hamburgerMenu.svg";
+import NavLink from '../components/NavLink'
 
 import React, { useState } from "react";
 const Nav = (props) => {
@@ -47,16 +48,10 @@ const toggleHamburgerMenu = () => {
         </div>
         {
           hamburgermenu ?
-          <div className="nav-items">
-          <p className="items">Mercury</p>
-          <p className="items">Venus</p>
-          <p className="items">Earth</p>
-          <p className="items">Mars</p>
-          <p className="items">Jupiter</p>
-          <p className="items">Saturn</p>
-          <p className="items">Uranus</p>
-          <p className="items">Neptune</p>
-        </div> :
+        <NavLink /> 
+        &&
+        <NavLink title=""  />
+        :
         null
         }
       </nav>

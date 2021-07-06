@@ -27,9 +27,31 @@ text-transform: uppercase
 .hamburgerMenu{   
     width: 24px;
 height: 17px;}
-// .nav-items{
 
-// }
-//     .items{
+.link-container{
+display: flex;
+}
 
-//     }
+.right-container{
+    align-items: center;
+    width: 17.7rem;
+    display: flex;
+    margin: 0px 7px;
+}
+
+.nav-planets{
+margin-left: 1rem;
+font-family: 'Spartan', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+letter-spacing: 1.36364px;
+text-transform: uppercase;
+}
+.nav-planets-icon{
+        height: 2rem;
+}
+
+.nav-arrow{}
