@@ -1,6 +1,5 @@
 import hamburgerMenuDisabled from '../assets/hamburgerMenuFaded.svg'
 import hamburgerMenu from "../assets/hamburgerMenu.svg";
-import NavLink from '../components/NavLink'
 import NavLinks from "../components/NavLinks";
 import { useState } from "react";
 const Nav = (props) => {
