@@ -1,8 +1,8 @@
 import hamburgerMenuDisabled from '../assets/hamburgerMenuFaded.svg'
 import hamburgerMenu from "../assets/hamburgerMenu.svg";
 import NavLink from '../components/NavLink'
-
-import React, { useState } from "react";
+import NavLinks from "../components/NavLinks";
+import { useState } from "react";
 const Nav = (props) => {
 
 // i was thinking of mapping through this array to show however i wasnt sure
@@ -46,14 +46,9 @@ const toggleHamburgerMenu = () => {
             />
           )}
         </div>
-        {
-          hamburgermenu ?
-        <NavLink /> 
-        &&
-        <NavLink title=""  />
-        :
-        null
-        }
+        {hamburgermenu
+          ? <NavLinks/> 
+          : null}
       </nav>
     );
 }
