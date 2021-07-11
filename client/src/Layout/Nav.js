@@ -4,21 +4,6 @@ import NavLinks from "../components/NavLinks";
 import { useState } from "react";
 const Nav = (props) => {
 
-// i was thinking of mapping through this array to show however i wasnt sure
-//how to do that and react router dom. for now i will do this way. 
-// i will come back to refactor my code 
-
-
-// const planets = [
-//   "Mercury",
-//   "Venus",
-//   "Earth",
-//   "Mars",
-//   "Jupiter",
-//   "Saturn",
-//   "Uranus",
-//   "Neptune"
-// ];
 const [hamburgermenu , setHamburgerMenu] = useState (false)
 
 const toggleHamburgerMenu = () => {

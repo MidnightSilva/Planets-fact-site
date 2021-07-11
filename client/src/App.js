@@ -1,7 +1,7 @@
 import './Scss/App.scss';
 import "./Scss/Nav.scss"
 import "./Scss/Variables.scss"
-import Nav from './components/Nav'
+import Nav from './Layout/Nav'
 import Mercury from './Pages/Mercury';
 import Venus from './Pages/Venus'
 import Earth from './Pages/Earth'

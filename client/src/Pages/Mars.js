@@ -1,11 +1,7 @@
 import React from 'react'
 
 const Mars = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+    return <div className="page-container"></div>;
 }
 
 export default Mars
