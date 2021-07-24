@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../components/Button'
 
 const PlanetInfoButtons = () => {
+  
     return (
       <div>
         <Button name="Overview" />

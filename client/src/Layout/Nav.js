@@ -2,13 +2,16 @@ import hamburgerMenuDisabled from '../assets/hamburgerMenuFaded.svg'
 import hamburgerMenu from "../assets/hamburgerMenu.svg";
 import NavLinks from "../components/NavLinks";
 import { useState } from "react";
+// import { useContext } from "react";
+// import  AppContext from "../App";
 const Nav = (props) => {
-
+// const [ hamburgermenu, toggleHamburgerMenu ]= useContext(AppContext);
 const [hamburgermenu , setHamburgerMenu] = useState (false)
 
 const toggleHamburgerMenu = () => {
   hamburgermenu ? setHamburgerMenu(false) : setHamburgerMenu(true); 
 }
+
 
     return (
       <nav>

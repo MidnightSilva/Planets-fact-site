@@ -10,28 +10,31 @@ import Jupiter from './Pages/Jupiter'
 import Saturn from './Pages/Saturn'
 import Uranus from './Pages/Uranus'
 import Neptune from './Pages/Neptune'
+// import  Context  from './Context/AppContext'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <Nav />
-      <Switch>
-        <Route exact path="/" component={Mercury} />
-        <Route exact path="/Venus" component={Venus} />
+      {/* <Context> */}
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={Mercury} />
+          <Route exact path="/Venus" component={Venus} />
 
-        <Route exact path="/earth" component={Earth} />
+          <Route exact path="/earth" component={Earth} />
 
-        <Route exact path="/mars" component={Mars} />
+          <Route exact path="/mars" component={Mars} />
 
-        <Route exact path="/jupiter" component={Jupiter} />
+          <Route exact path="/jupiter" component={Jupiter} />
 
-        <Route exact path="/saturn" component={Saturn} />
+          <Route exact path="/saturn" component={Saturn} />
 
-        <Route exact path="/uranus" component={Uranus} />
+          <Route exact path="/uranus" component={Uranus} />
 
-        <Route exact path="/neptune" component={Neptune} />
-      </Switch>
+          <Route exact path="/neptune" component={Neptune} />
+        </Switch>
+      {/* </Context> */}
     </Router>
   );
 }
