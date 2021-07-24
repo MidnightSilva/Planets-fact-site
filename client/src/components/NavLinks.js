@@ -8,8 +8,8 @@ import saturn from "../assets/s.svg";
 import uranus from "../assets/u.svg";
 import neptune from "../assets/n.svg";
 import { Link } from "react-router-dom";
-import {   useContext } from "react";
-import AppContext from "../App";
+// import {   useContext } from "react";
+// import AppContext from "../App";
 
 const NavLinks = (  ) => {
   // const [ hamburgermenu, toggleHamburgerMenu ] = useContext(AppContext);
