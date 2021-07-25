@@ -33,9 +33,13 @@ const toggleHamburgerMenu = () => {
             />
           )}
         </div>
-        {hamburgermenu
-          ? <NavLinks/> 
-          : null}
+        {hamburgermenu ? (
+          <NavLinks
+            onClick={() => toggleHamburgerMenu(!toggleHamburgerMenu)}
+            hamburgerMenu={hamburgerMenu}
+            toggleHamburgerMenu={toggleHamburgerMenu}
+          />
+        ) : null}
       </nav>
     );
 }

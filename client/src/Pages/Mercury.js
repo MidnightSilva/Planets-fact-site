@@ -3,6 +3,8 @@ import Button from "../components/Button";
 import PlanetImage from "../components/PlanetImage";
 import PlanetDes from "../components/Card";
 import mercury from "../assets/planet-mercury.svg";
+import mercuryInternal from "../assets/planet-mercury-internal.svg";
+import mercurySurface from "../assets/geology-mercury.svg";
 import PlanetFactCards from "../Layout/PlanetFactCards";
 
 const Mercury = ( props ) => {
@@ -55,7 +57,15 @@ const Mercury = ( props ) => {
           name="Surface"
         />
       </div>
-      <PlanetImage image={mercury} />
+
+      {/* {(Overview === true && <PlanetImage image={mercury} />) ||
+        (Structure === false && <PlanetImage image={mercuryInternal} />) ||
+        (Surface === true && <PlanetImage image={mercurySurface} />)} */}
+
+      {(Overview === true && <PlanetImage image={mercury} />) ||
+        (Structure === false && <PlanetImage image={mercuryInternal} />) ||
+        (Surface === true &&
+          ((<PlanetImage image={mercurySurface} />)))}
 
       {(Overview === true && (
         <PlanetDes
@@ -74,39 +84,8 @@ const Mercury = ( props ) => {
             title="Mercury"
             des="Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s."
           />
-          // )) ||
-          // (Overview === true && (
-          //   // this.props.someOtherProp === "bar" && <OtherContentAgain />) || (
-          //   <PlanetDes
-          //     title="Mercury"
-          //     des="Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth"
-          //   />
         ))}
-      {/* {Surface === true ? (
-        <PlanetDes
-          title="Mercury"
-          des="Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth"
-        />
-      ) : (
-        <PlanetDes
-          title="Mercury"
-          des="Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density."
-        />
-      )}
 
-      {
-        <PlanetDes
-          title="Mercury"
-          des="Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density."
-        />
-      }
-
-      {
-        <PlanetDes
-          title="Mercury"
-          des="Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s."
-        />
-      } */}
       <PlanetFactCards />
     </div>
   );

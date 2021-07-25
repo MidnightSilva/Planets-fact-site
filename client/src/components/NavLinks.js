@@ -8,6 +8,7 @@ import saturn from "../assets/s.svg";
 import uranus from "../assets/u.svg";
 import neptune from "../assets/n.svg";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 // import {   useContext } from "react";
 // import AppContext from "../App";
 
@@ -17,10 +18,20 @@ const NavLinks = (  ) => {
   // const toggleHamburgerMenu = () => {
   //   hamburgermenu ? setHamburgerMenu(false) : setHamburgerMenu(true);
   // };
+  const [hamburgermenu, setHamburgerMenu] = useState(false);
+
+  const toggleHamburgerMenu = () => {
+    hamburgermenu ? setHamburgerMenu(false) : setHamburgerMenu(true);
+  };
+
   return (
     <div>
       <Link to="/">
-        <NavLink image={mercury} title="mercury" />{" "}
+        <NavLink
+          image={mercury}
+          title="mercury"
+          onClick={() => toggleHamburgerMenu(!toggleHamburgerMenu)}
+        />{" "}
       </Link>
       <Link to="/venus">
         {" "}
