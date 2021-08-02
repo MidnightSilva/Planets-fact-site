@@ -1,6 +1,7 @@
 import './Scss/App.scss';
 import "./Scss/Nav.scss"
 import "./Scss/Variables.scss"
+import "./Scss/button.scss";
 import Nav from './Layout/Nav'
 import Mercury from './Pages/Mercury';
 import Venus from './Pages/Venus'
@@ -10,13 +11,13 @@ import Jupiter from './Pages/Jupiter'
 import Saturn from './Pages/Saturn'
 import Uranus from './Pages/Uranus'
 import Neptune from './Pages/Neptune'
-// import  Context  from './Context/AppContext'
+import AppContextProvider from "./Context/AppContext";
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
-    <Router>
-      {/* <Context> */}
+    <AppContextProvider>
+      <Router>
         <Nav />
         <Switch>
           <Route exact path="/" component={Mercury} />
@@ -34,8 +35,8 @@ function App() {
 
           <Route exact path="/neptune" component={Neptune} />
         </Switch>
-      {/* </Context> */}
-    </Router>
+      </Router>
+    </AppContextProvider>
   );
 }
 

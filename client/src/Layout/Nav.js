@@ -1,17 +1,13 @@
 import hamburgerMenuDisabled from '../assets/hamburgerMenuFaded.svg'
 import hamburgerMenu from "../assets/hamburgerMenu.svg";
 import NavLinks from "../components/NavLinks";
-import { useState } from "react";
-// import { useContext } from "react";
-// import  AppContext from "../App";
+// import { useState } from "react";
+import { useContext } from "react";
+import { PlanetContext } from "../Context/AppContext";
+
 const Nav = (props) => {
-// const [ hamburgermenu, toggleHamburgerMenu ]= useContext(AppContext);
-const [hamburgermenu , setHamburgerMenu] = useState (false)
 
-const toggleHamburgerMenu = () => {
-  hamburgermenu ? setHamburgerMenu(false) : setHamburgerMenu(true); 
-}
-
+const { toggleHamburgerMenu, hamburgermenu } = useContext(PlanetContext);
 
     return (
       <nav>
@@ -33,13 +29,7 @@ const toggleHamburgerMenu = () => {
             />
           )}
         </div>
-        {hamburgermenu ? (
-          <NavLinks
-            onClick={() => toggleHamburgerMenu(!toggleHamburgerMenu)}
-            hamburgerMenu={hamburgerMenu}
-            toggleHamburgerMenu={toggleHamburgerMenu}
-          />
-        ) : null}
+        {hamburgermenu ? <NavLinks  /> : null}
       </nav>
     );
 }

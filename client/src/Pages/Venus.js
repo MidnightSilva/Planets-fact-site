@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import Button from "../components/Button";
 import PlanetImage from "../components/PlanetImage";
 import PlanetDes from "../components/Card";
@@ -6,28 +6,18 @@ import venus from "../assets/planet-venus.svg";
 import venusInternal from "../assets/planet-venus-internal.svg";
 import venusSurface from "../assets/geology-venus.svg";
 import PlanetFactCards from "../Layout/PlanetFactCards";
+import { useContext } from "react";
+import { PlanetContext } from "../Context/AppContext";
+
 const Venus = () => {
-  const [Overview, setOverview] = useState(true);
-  const [Structure, setStructure] = useState(true);
-  const [Surface, setSurface] = useState(true);
-
-  const togglePlanetDescription = () => {
-    Overview ? setOverview(true) : setOverview(true);
-    Structure ? setStructure(true) : setStructure(true);
-    Surface ? setSurface(false) : setSurface(false);
-  };
-
-  const toggleStructureDescription = () => {
-    Overview ? setOverview(false) : setOverview(false);
-    Structure ? setStructure(false) : setStructure(false);
-    Surface ? setSurface(false) : setSurface(false);
-  };
-
-  const toggleSurfaceDescription = () => {
-    Overview ? setOverview(false) : setOverview(false);
-    Structure ? setStructure(true) : setStructure(true);
-    Surface ? setSurface(true) : setSurface(true);
-  };
+   const {
+     togglePlanetDescription,
+     toggleStructureDescription,
+     toggleSurfaceDescription,
+     Overview,
+     Structure,
+     Surface,
+   } = useContext(PlanetContext);
 
   return (
     <div className="page-container">

@@ -1,50 +1,64 @@
-import { useState } from "react";
-import Button from "../components/Button";
+
+// import Button from "../components/Button";
 import PlanetImage from "../components/PlanetImage";
 import PlanetDes from "../components/Card";
 import neptune from "../assets/planet-neptune.svg";
 import neptuneInternal from "../assets/planet-neptune-internal.svg";
 import neptuneSurface from "../assets/geology-neptune.svg";
 import PlanetFactCards from "../Layout/PlanetFactCards";
+import { useState} from "react";
+// import { PlanetContext } from "../Context/AppContext";
 const Neptune = () => {
-  const [Overview, setOverview] = useState(true);
-  const [Structure, setStructure] = useState(true);
-  const [Surface, setSurface] = useState(true);
-  const togglePlanetDescription = () => {
-    Overview ? setOverview(true) : setOverview(true);
-    Structure ? setStructure(true) : setStructure(true);
-    Surface ? setSurface(false) : setSurface(false);
-  };
+  // const {
+  //   togglePlanetDescription,
+  //   toggleStructureDescription,
+  //   toggleSurfaceDescription,
+  //   Overview,
+  //   Structure,
+  //   Surface,
+  // } = useContext(PlanetContext);
+       const [Overview, setOverview] = useState(true);
+       const [Structure, setStructure] = useState(true);
+       const [Surface, setSurface] = useState(true);
 
-  const toggleStructureDescription = () => {
-    Overview ? setOverview(false) : setOverview(false);
-    Structure ? setStructure(false) : setStructure(false);
-    Surface ? setSurface(false) : setSurface(false);
-  };
+       const togglePlanetDescription = () => {
+         Overview ? setOverview(true) : setOverview(true);
+         Structure ? setStructure(true) : setStructure(true);
+         Surface ? setSurface(false) : setSurface(false);
+       };
 
-  const toggleSurfaceDescription = () => {
-    Overview ? setOverview(false) : setOverview(false);
-    Structure ? setStructure(true) : setStructure(true);
-    Surface ? setSurface(true) : setSurface(true);
-  };
+       const toggleStructureDescription = () => {
+         Overview ? setOverview(false) : setOverview(false);
+         Structure ? setStructure(false) : setStructure(false);
+         Surface ? setSurface(false) : setSurface(false);
+       };
+
+       const toggleSurfaceDescription = () => {
+         Overview ? setOverview(false) : setOverview(false);
+         Structure ? setStructure(true) : setStructure(true);
+         Surface ? setSurface(true) : setSurface(true);
+       };
 
   return (
     <div className="page-container">
       <div>
-        <Button
+        <button
           onClick={() => togglePlanetDescription(!togglePlanetDescription)}
-          name="Overview"
-        />
-        <Button
+        >
+          Overview
+        </button>
+        <button
           onClick={() =>
             toggleStructureDescription(!toggleStructureDescription)
           }
-          name="Structure"
-        />
-        <Button
+        >
+          Structure
+        </button>
+        <button
           onClick={() => toggleSurfaceDescription(!toggleSurfaceDescription)}
-          name="Surface"
-        />
+        >
+          Surface
+        </button>
       </div>
       {(Overview === true && <PlanetImage image={neptune} />) ||
         (Structure === false && <PlanetImage image={neptuneInternal} />) ||
