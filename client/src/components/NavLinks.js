@@ -16,7 +16,7 @@ import { PlanetContext } from "../Context/AppContext";
 
 const NavLinks =(props) => {
 
-const { toggleHamburgerMenu, hamburgermenu } = useContext(PlanetContext);
+const { toggleHamburgerMenu} = useContext(PlanetContext);
 
   return (
     <div>
