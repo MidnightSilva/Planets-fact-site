@@ -11,6 +11,7 @@ import Jupiter from './Pages/Jupiter'
 import Saturn from './Pages/Saturn'
 import Uranus from './Pages/Uranus'
 import Neptune from './Pages/Neptune'
+// import Planet from './Pages/Planet';
 import AppContextProvider from "./Context/AppContext";
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -20,6 +21,7 @@ function App() {
       <Router>
         <Nav />
         <Switch>
+          {/* <Route exact path="/:planet" component={Planet}/> */}
           <Route exact path="/" component={Mercury} />
           <Route exact path="/Venus" component={Venus} />
 

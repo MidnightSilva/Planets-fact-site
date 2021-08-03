@@ -1,43 +1,22 @@
-
-// import Button from "../components/Button";
 import PlanetImage from "../components/PlanetImage";
 import PlanetDes from "../components/Card";
 import neptune from "../assets/planet-neptune.svg";
 import neptuneInternal from "../assets/planet-neptune-internal.svg";
 import neptuneSurface from "../assets/geology-neptune.svg";
 import PlanetFactCards from "../Layout/PlanetFactCards";
-import { useState} from "react";
-// import { PlanetContext } from "../Context/AppContext";
+import { useContext} from "react";
+import { PlanetContext } from "../Context/AppContext";
 const Neptune = () => {
-  // const {
-  //   togglePlanetDescription,
-  //   toggleStructureDescription,
-  //   toggleSurfaceDescription,
-  //   Overview,
-  //   Structure,
-  //   Surface,
-  // } = useContext(PlanetContext);
-       const [Overview, setOverview] = useState(true);
-       const [Structure, setStructure] = useState(true);
-       const [Surface, setSurface] = useState(true);
-
-       const togglePlanetDescription = () => {
-         Overview ? setOverview(true) : setOverview(true);
-         Structure ? setStructure(true) : setStructure(true);
-         Surface ? setSurface(false) : setSurface(false);
-       };
-
-       const toggleStructureDescription = () => {
-         Overview ? setOverview(false) : setOverview(false);
-         Structure ? setStructure(false) : setStructure(false);
-         Surface ? setSurface(false) : setSurface(false);
-       };
-
-       const toggleSurfaceDescription = () => {
-         Overview ? setOverview(false) : setOverview(false);
-         Structure ? setStructure(true) : setStructure(true);
-         Surface ? setSurface(true) : setSurface(true);
-       };
+  
+  const {
+    togglePlanetDescription,
+    toggleStructureDescription,
+    toggleSurfaceDescription,
+    Overview,
+    Structure,
+    Surface,
+  } = useContext(PlanetContext);
+   
 
   return (
     <div className="page-container">

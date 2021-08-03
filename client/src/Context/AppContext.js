@@ -44,6 +44,12 @@ const value = {
   togglePlanetDescription,
   toggleStructureDescription,
   toggleSurfaceDescription,
+  Overview,
+  
+  Structure,
+  
+  Surface,
+  
 };
 
   return (
