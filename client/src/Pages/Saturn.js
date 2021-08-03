@@ -1,5 +1,4 @@
-
-// import Button from "../components/Button";
+import PlanetLink from "../components/PlanetLink";
 import PlanetImage from "../components/PlanetImage";
 import PlanetDes from "../components/Card";
 import saturn from "../assets/planet-saturn.svg";
@@ -43,6 +42,15 @@ const Saturn = () => {
       {(Overview === true && <PlanetImage image={saturn} />) ||
         (Structure === false && <PlanetImage image={saturnInternal} />) ||
         (Surface === true && <PlanetImage image={saturnSurface} />)}
+      {(Overview === true && (
+        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+      )) ||
+        (Structure === false && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+        )) ||
+        (Surface === true && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+        ))}
       {(Overview === true && (
         <PlanetDes
           title="Saturn"

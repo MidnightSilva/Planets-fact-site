@@ -1,5 +1,4 @@
-
-import Button from "../components/Button";
+import PlanetLink from "../components/PlanetLink";
 import PlanetImage from "../components/PlanetImage";
 import PlanetDes from "../components/Card";
 import uranus from "../assets/planet-uranus.svg";
@@ -10,35 +9,47 @@ import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
 
 const Uranus = () => {
-   const {
-     togglePlanetDescription,
-     toggleStructureDescription,
-     toggleSurfaceDescription,
-     Overview,
-     Structure,
-     Surface,
-   } = useContext(PlanetContext);
+  const {
+    togglePlanetDescription,
+    toggleStructureDescription,
+    toggleSurfaceDescription,
+    Overview,
+    Structure,
+    Surface,
+  } = useContext(PlanetContext);
   return (
     <div className="page-container">
       <div>
-        <Button
+        <button
           onClick={() => togglePlanetDescription(!togglePlanetDescription)}
-          name="Overview"
-        />
-        <Button
+        >
+          Overview
+        </button>
+        <button
           onClick={() =>
             toggleStructureDescription(!toggleStructureDescription)
           }
-          name="Structure"
-        />
-        <Button
+        >
+          Structure
+        </button>
+        <button
           onClick={() => toggleSurfaceDescription(!toggleSurfaceDescription)}
-          name="Surface"
-        />
+        >
+          Surface
+        </button>
       </div>
       {(Overview === true && <PlanetImage image={uranus} />) ||
         (Structure === false && <PlanetImage image={uranusInternal} />) ||
         (Surface === true && <PlanetImage image={uranusSurface} />)}
+      {(Overview === true && (
+        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+      )) ||
+        (Structure === false && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+        )) ||
+        (Surface === true && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+        ))}
       {(Overview === true && (
         <PlanetDes
           title="Uranus"

@@ -1,5 +1,4 @@
-
-// import Button from "../components/Button";
+import PlanetLink from "../components/PlanetLink";
 import PlanetImage from "../components/PlanetImage";
 import PlanetDes from "../components/Card";
 import mars from "../assets/planet-mars.svg";
@@ -18,7 +17,7 @@ const Mars = () => {
     Structure,
     Surface,
   } = useContext(PlanetContext);
-   
+
   return (
     <div className="page-container">
       <div>
@@ -43,6 +42,15 @@ const Mars = () => {
       {(Overview === true && <PlanetImage image={mars} />) ||
         (Structure === false && <PlanetImage image={marsInternal} />) ||
         (Surface === true && <PlanetImage image={marsSurface} />)}
+      {(Overview === true && (
+        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+      )) ||
+        (Structure === false && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+        )) ||
+        (Surface === true && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+        ))}
       {(Overview === true && (
         <PlanetDes
           title="Mars"

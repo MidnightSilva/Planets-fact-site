@@ -1,4 +1,4 @@
-
+import PlanetLink from "../components/PlanetLink";
 import PlanetImage from "../components/PlanetImage";
 import PlanetDes from "../components/Card";
 import earth from "../assets/planet-earth.svg";
@@ -9,7 +9,6 @@ import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
 
 const Earth = (props) => {
-
   const {
     togglePlanetDescription,
     toggleStructureDescription,
@@ -18,7 +17,6 @@ const Earth = (props) => {
     Structure,
     Surface,
   } = useContext(PlanetContext);
- 
 
   return (
     <div className="page-container">
@@ -44,6 +42,15 @@ const Earth = (props) => {
       {(Overview === true && <PlanetImage image={earth} />) ||
         (Structure === false && <PlanetImage image={earthInternal} />) ||
         (Surface === true && <PlanetImage image={earthSurface} />)}
+      {(Overview === true && (
+        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+      )) ||
+        (Structure === false && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+        )) ||
+        (Surface === true && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+        ))}
       {(Overview === true && (
         <PlanetDes
           title="Earth"

@@ -1,6 +1,5 @@
-
-import Button from "../components/Button";
 import PlanetImage from "../components/PlanetImage";
+import PlanetLink from "../components/PlanetLink";
 import PlanetDes from "../components/Card";
 import venus from "../assets/planet-venus.svg";
 import venusInternal from "../assets/planet-venus-internal.svg";
@@ -23,24 +22,36 @@ const Venus = () => {
     <div className="page-container">
       {" "}
       <div>
-        <Button
+        <button
           onClick={() => togglePlanetDescription(!togglePlanetDescription)}
-          name="Overview"
-        />
-        <Button
+        >
+          Overview
+        </button>
+        <button
           onClick={() =>
             toggleStructureDescription(!toggleStructureDescription)
           }
-          name="Structure"
-        />
-        <Button
+        >
+          Structure
+        </button>
+        <button
           onClick={() => toggleSurfaceDescription(!toggleSurfaceDescription)}
-          name="Surface"
-        />
+        >
+          Surface
+        </button>
       </div>
       {(Overview === true && <PlanetImage image={venus} />) ||
         (Structure === false && <PlanetImage image={venusInternal} />) ||
         (Surface === true && <PlanetImage image={venusSurface} />)}
+      {(Overview === true && (
+        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+      )) ||
+        (Structure === false && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+        )) ||
+        (Surface === true && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+        ))}
       {(Overview === true && (
         <PlanetDes
           title="Venus"
@@ -57,7 +68,7 @@ const Venus = () => {
           <PlanetDes
             title="Venus"
             des="Much of the Venusian surface appears to have been shaped by volcanic activity. Venus has several times as many volcanoes as Earth, and it has 167 large volcanoes that are over 100 km (60 mi) across. The only volcanic complex of this size on Earth is the Big Island of Hawaii."
-/>
+          />
         ))}
       <PlanetFactCards />
     </div>

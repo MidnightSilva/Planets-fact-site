@@ -1,4 +1,5 @@
 import PlanetImage from "../components/PlanetImage";
+import PlanetLink from "../components/PlanetLink";
 import PlanetDes from "../components/Card";
 import jupiter from "../assets/planet-jupiter.svg";
 import jupiterInternal from "../assets/planet-jupiter-internal.svg";
@@ -44,6 +45,15 @@ const Jupiter = () => {
       {(Overview === true && <PlanetImage image={jupiter} />) ||
         (Structure === false && <PlanetImage image={jupiterInternal} />) ||
         (Surface === true && <PlanetImage image={jupiterSurface} />)}
+      {(Overview === true && (
+        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+      )) ||
+        (Structure === false && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+        )) ||
+        (Surface === true && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+        ))}
       {(Overview === true && (
         <PlanetDes
           title="Jupiter"

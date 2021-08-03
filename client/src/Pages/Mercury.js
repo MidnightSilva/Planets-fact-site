@@ -1,5 +1,6 @@
-import PlanetImage from "../components/PlanetImage";
+import PlanetImage from "../components/PlanetImage"; 
 import PlanetDes from "../components/Card";
+import PlanetLink from "../components/PlanetLink";
 import mercury from "../assets/planet-mercury.svg";
 import mercuryInternal from "../assets/planet-mercury-internal.svg";
 import mercurySurface from "../assets/geology-mercury.svg";
@@ -19,8 +20,7 @@ const Mercury = ( props ) => {
 
   return (
     <div className="page-container">
-      <div
-      >
+      <div>
         <button
           onClick={() => togglePlanetDescription(!togglePlanetDescription)}
         >
@@ -30,7 +30,9 @@ const Mercury = ( props ) => {
           onClick={() =>
             toggleStructureDescription(!toggleStructureDescription)
           }
-        >Structure</button>
+        >
+          Structure
+        </button>
         <button
           onClick={() => toggleSurfaceDescription(!toggleSurfaceDescription)}
         >
@@ -38,14 +40,19 @@ const Mercury = ( props ) => {
         </button>
       </div>
 
-      {/* {(Overview === true && <PlanetImage image={mercury} />) ||
-        (Structure === false && <PlanetImage image={mercuryInternal} />) ||
-        (Surface === true && <PlanetImage image={mercurySurface} />)} */}
-
       {(Overview === true && <PlanetImage image={mercury} />) ||
         (Structure === false && <PlanetImage image={mercuryInternal} />) ||
         (Surface === true && <PlanetImage image={mercurySurface} />)}
-
+        
+      {(Overview === true && (
+        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+      )) ||
+        (Structure === false && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+        )) ||
+        (Surface === true && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+        ))}
       {(Overview === true && (
         <PlanetDes
           title="Mercury"
@@ -64,7 +71,6 @@ const Mercury = ( props ) => {
             des="Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s."
           />
         ))}
-
       <PlanetFactCards />
     </div>
   );
