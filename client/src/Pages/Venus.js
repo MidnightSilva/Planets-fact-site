@@ -23,11 +23,13 @@ const Venus = () => {
       {" "}
       <div>
         <button
+          className="planet-btn"
           onClick={() => togglePlanetDescription(!togglePlanetDescription)}
         >
           Overview
         </button>
         <button
+          className="planet-btn"
           onClick={() =>
             toggleStructureDescription(!toggleStructureDescription)
           }
@@ -35,6 +37,7 @@ const Venus = () => {
           Structure
         </button>
         <button
+          className="planet-btn"
           onClick={() => toggleSurfaceDescription(!toggleSurfaceDescription)}
         >
           Surface

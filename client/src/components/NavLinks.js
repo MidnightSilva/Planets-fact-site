@@ -9,7 +9,6 @@ import uranus from "../assets/u.svg";
 import neptune from "../assets/n.svg";
 import { Link } from "react-router-dom";
 import arrow from "../assets/Linkarrow.svg";
-// import { useState } from "react";
 import {   useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
 

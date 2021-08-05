@@ -23,11 +23,13 @@ const Neptune = () => {
     <div className="page-container">
       <div>
         <button
+          className="planet-btn"
           onClick={() => togglePlanetDescription(!togglePlanetDescription)}
         >
           Overview
         </button>
         <button
+          className="planet-btn"
           onClick={() =>
             toggleStructureDescription(!toggleStructureDescription)
           }
@@ -35,6 +37,7 @@ const Neptune = () => {
           Structure
         </button>
         <button
+          className="planet-btn"
           onClick={() => toggleSurfaceDescription(!toggleSurfaceDescription)}
         >
           Surface

@@ -22,11 +22,13 @@ const Earth = (props) => {
     <div className="page-container">
       <div onClick={() => togglePlanetDescription(!togglePlanetDescription)}>
         <button
+          className="planet-btn"
           onClick={() => togglePlanetDescription(!togglePlanetDescription)}
         >
           Overview
         </button>
         <button
+          className="planet-btn"
           onClick={() =>
             toggleStructureDescription(!toggleStructureDescription)
           }
@@ -34,6 +36,7 @@ const Earth = (props) => {
           Structure
         </button>
         <button
+          className="planet-btn"
           onClick={() => toggleSurfaceDescription(!toggleSurfaceDescription)}
         >
           Surface

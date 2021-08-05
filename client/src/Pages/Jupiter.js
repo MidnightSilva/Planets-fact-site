@@ -25,11 +25,13 @@ const Jupiter = () => {
     <div className="page-container">
       <div>
         <button
+          className="planet-btn"
           onClick={() => togglePlanetDescription(!togglePlanetDescription)}
         >
           Overview
         </button>
         <button
+          className="planet-btn"
           onClick={() =>
             toggleStructureDescription(!toggleStructureDescription)
           }
@@ -37,6 +39,7 @@ const Jupiter = () => {
           Structure
         </button>
         <button
+          className="planet-btn"
           onClick={() => toggleSurfaceDescription(!toggleSurfaceDescription)}
         >
           Surface

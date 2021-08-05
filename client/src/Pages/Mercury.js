@@ -22,11 +22,13 @@ const Mercury = ( props ) => {
     <div className="page-container">
       <div>
         <button
+          className="planet-btn"
           onClick={() => togglePlanetDescription(!togglePlanetDescription)}
         >
           Overview
         </button>
         <button
+          className="planet-btn"
           onClick={() =>
             toggleStructureDescription(!toggleStructureDescription)
           }
@@ -34,6 +36,7 @@ const Mercury = ( props ) => {
           Structure
         </button>
         <button
+          className="planet-btn"
           onClick={() => toggleSurfaceDescription(!toggleSurfaceDescription)}
         >
           Surface
@@ -43,7 +46,7 @@ const Mercury = ( props ) => {
       {(Overview === true && <PlanetImage image={mercury} />) ||
         (Structure === false && <PlanetImage image={mercuryInternal} />) ||
         (Surface === true && <PlanetImage image={mercurySurface} />)}
-        
+
       {(Overview === true && (
         <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
       )) ||
