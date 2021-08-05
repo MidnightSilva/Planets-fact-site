@@ -20,7 +20,7 @@ const Earth = (props) => {
 
   return (
     <div className="page-container">
-      <div onClick={() => togglePlanetDescription(!togglePlanetDescription)}>
+      <div className="button-container">
         <button
           className="planet-btn"
           onClick={() => togglePlanetDescription(!togglePlanetDescription)}

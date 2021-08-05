@@ -3,6 +3,16 @@
     margin: 29px 27px;
 }
 
+.button-container{
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    padding: 20px 24px;
+    display: flex;
+   justify-content: space-around;
+       mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
 .planet-btn{
         background: none;
     color: inherit;
@@ -11,4 +21,6 @@
     font: inherit;
     cursor: pointer;
     outline: inherit;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
