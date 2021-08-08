@@ -76,6 +76,7 @@ const Uranus = () => {
       <PlanetCards title="Revolution Time" des="84 Years" />
       <PlanetCards title="Radius" des="25,362 Km" />
       <PlanetCards title="Average Temp." des="-195 C" />
+      <div className="space" />
     </div>
   );
 };

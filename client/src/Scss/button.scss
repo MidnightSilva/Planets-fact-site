@@ -1,6 +1,7 @@
 @import "./Variables.scss";
 
 .btn-container{
+  
     border-bottom: solid 1px;
     padding: 20px 24px;
     display: flex;
@@ -10,6 +11,13 @@
     font-family: $font-planet-card;
 }
 
+.planet-btn{
+  font-size: 12px;
+    font-weight: bold;
+    line-height: 10px;
+    text-align: center;
+    letter-spacing: 1.92857px;
+}
 button{
             background: none;
     color: inherit;

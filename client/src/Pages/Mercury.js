@@ -78,6 +78,7 @@ const Mercury = ( props ) => {
       <PlanetCards title="Revolution Time" des="87.97 Days" />
       <PlanetCards title="Radius" des="2,439.7 Km" />
       <PlanetCards title="Average Temp." des="430 C" />
+      <div className='space'/>
     </div>
   );
 };

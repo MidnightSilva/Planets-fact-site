@@ -80,6 +80,7 @@ const Jupiter = () => {
       <PlanetCards title="Revolution Time" des="11.86 Years" />
       <PlanetCards title="Radius" des="69,911 Km" />
       <PlanetCards title="Average Temp." des="-108 C" />
+      <div className="space" />
     </div>
   );
 };

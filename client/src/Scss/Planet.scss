@@ -57,7 +57,11 @@ margin-bottom: 8px;
     font-size: $planet-card-des-font-size;
     text-transform: uppercase;
 }
-
-div:last-child{
-    margin-bottom: 10px;
+//bottom page space
+.space{
+    height: 3vh;
 }
+
+// div:last-child{
+//     margin-bottom: 10px;
+// }

@@ -77,6 +77,7 @@ const Earth = (props) => {
       <PlanetCards title="Revolution Time" des="365.26 Days" />
       <PlanetCards title="Radius" des="6,371 Km" />
       <PlanetCards title="Average Temp." des="16 C" />
+      <div className="space" />
     </div>
   );
 };
