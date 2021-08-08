@@ -1,0 +1,59 @@
+@use "sass:map";
+@import "./Variables.scss";
+
+//Image 
+.planet{
+height: $Planet-height-mobile;
+width: $planet-width-mobile;
+margin: 29px 27px;
+padding: 95px 132px;
+align-self: center;
+} 
+// planet content container
+.planet-content-container{
+@include VCenter();
+}
+.planet-name{
+font-family:$font;
+text-transform: uppercase;
+letter-spacing: .8px;
+}
+.planet-info{
+width: 82%;
+line-height: 22px;
+text-align: center;
+}
+// link container to wikipedia
+.link-container-outside{
+@include Hcenter();
+color: rgba(255, 255, 255, 0.336);
+    margin-bottom: 28px;
+}
+.link{
+color: rgba(255, 255, 255, 0.336);
+margin-left: 2px;
+}
+.arrow-link{
+color: rgba(255, 255, 255, 0.336);
+margin-left: 6px;
+}
+//planet card 
+.planet-Card-container{
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+border: solid 1px  rgba(255, 255, 255, 0.336);;
+padding: 9px 24px 13px;
+margin-bottom: 8px;
+}
+.planet-card-name{
+    font-family: $font-planet-card;
+    color: rgba(255, 255, 255, 0.336);
+    font-size: $planet-card-font-size;
+    text-transform: uppercase;
+}
+.planet-card-info{
+    font-family: $font;
+    font-size: $planet-card-des-font-size;
+    text-transform: uppercase;
+}

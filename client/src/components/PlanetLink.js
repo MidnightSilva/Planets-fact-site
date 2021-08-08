@@ -2,12 +2,12 @@ import PlanetArrowLink from "../assets/planetlinkarrow.svg";
 
 const PlanetLink = (props) => {
   return (
-    <div>
-      <span>Source</span>
-      <a href={props.href} rel="noreferrer">
+    <div className="link-container-outside">
+      <span className="link-source">Source : </span>
+      <a className="link" href={props.href} rel="noreferrer">
         Wikipedia
       </a>
-      <img src={PlanetArrowLink} alt="arrow"/>
+      <img className="arrow-link" src={PlanetArrowLink} alt="arrow"/>
     </div>
   );
 };

@@ -1,10 +1,10 @@
 import PlanetImage from "../components/PlanetImage";
 import PlanetLink from "../components/PlanetLink";
-import PlanetDes from "../components/Card";
+import PlanetDes from "../components/PlanentDes";
 import jupiter from "../assets/planet-jupiter.svg";
 import jupiterInternal from "../assets/planet-jupiter-internal.svg";
 import jupiterSurface from "../assets/geology-jupiter.svg";
-import PlanetFactCards from "../Layout/PlanetFactCards";
+import PlanetCards from "../components/PlanetCard";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
 
@@ -48,15 +48,7 @@ const Jupiter = () => {
       {(Overview === true && <PlanetImage image={jupiter} />) ||
         (Structure === false && <PlanetImage image={jupiterInternal} />) ||
         (Surface === true && <PlanetImage image={jupiterSurface} />)}
-      {(Overview === true && (
-        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
-      )) ||
-        (Structure === false && (
-          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
-        )) ||
-        (Surface === true && (
-          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
-        ))}
+
       {(Overview === true && (
         <PlanetDes
           title="Jupiter"
@@ -75,8 +67,19 @@ const Jupiter = () => {
             des="The best known feature of Jupiter is the Great Red Spot, a persistent anticyclonic storm located 22° south of the equator. It is known to have existed since at least 1831, and possibly since 1665."
           />
         ))}
-
-      <PlanetFactCards />
+      {(Overview === true && (
+        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+      )) ||
+        (Structure === false && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+        )) ||
+        (Surface === true && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+        ))}
+      <PlanetCards title="Rotation Time" des="9.93 Hours" />
+      <PlanetCards title="Revolution Time" des="11.86 Years" />
+      <PlanetCards title="Radius" des="69,911 Km" />
+      <PlanetCards title="Average Temp." des="-108 C" />
     </div>
   );
 };

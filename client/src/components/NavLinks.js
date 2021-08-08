@@ -18,7 +18,7 @@ const NavLinks =(props) => {
 const { toggleHamburgerMenu} = useContext(PlanetContext);
 
   return (
-    <div>
+    <div className="nav-links-container">
       <Link to="/">
         <div className="link-container">
           <div className="right-container">

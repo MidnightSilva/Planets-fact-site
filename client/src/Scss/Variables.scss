@@ -1,15 +1,52 @@
-// 
+@use "sass:map";
 
-
-//text variables
+//color variables
 $text-color:#fff;
-//Nav variables 
+$background-color: #070724;
 
+// font family 
+$font: Antonio;
+$font-planet-card: Spartan;
+
+
+//font variables 
 $nav-title-m:36px;
+$planet-card-font-size:8px;
+$planet-card-des-font-size:26px;
+//planet image height mobile
+$Planet-height-mobile: 111px;
+$Planet-height-mobile-Surface-Geology: 191px;
+// Tablet
+$Planet-height-tablet: 253px;
+$Planet-height-tablet-Surface-Geology: 333px;
+// Desktop
+$Planet-height-desktop: 400px;
+$Planet-height-desktop-Surface-Geology: 480px;
+
+/// Planet image width 
+$planet-width-mobile:111px;
+// Tablet 
+$planet-width-tablet:253px;
+//Desktop 
+$planet-width-desktop:400px;
+
 
 
 @mixin rowspacebetween {
-  display: flex;
+display: flex;
 justify-content: space-between;
 align-items: center;
 }
+
+/// algining content VERTICAL center 
+@mixin VCenter{
+display: flex;
+flex-direction: column;
+align-items: center;
+ }
+
+ // aligning HORIZONTAL
+ @mixin Hcenter {
+   display: flex;
+   justify-content: center;
+ }

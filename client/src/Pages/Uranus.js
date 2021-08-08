@@ -1,10 +1,10 @@
 import PlanetLink from "../components/PlanetLink";
 import PlanetImage from "../components/PlanetImage";
-import PlanetDes from "../components/Card";
+import PlanetDes from "../components/PlanentDes";
 import uranus from "../assets/planet-uranus.svg";
 import uranusInternal from "../assets/planet-uranus-internal.svg";
 import uranusSurface from "../assets/geology-uranus.svg";
-import PlanetFactCards from "../Layout/PlanetFactCards";
+import PlanetCards from "../components/PlanetCard";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
 
@@ -44,15 +44,7 @@ const Uranus = () => {
       {(Overview === true && <PlanetImage image={uranus} />) ||
         (Structure === false && <PlanetImage image={uranusInternal} />) ||
         (Surface === true && <PlanetImage image={uranusSurface} />)}
-      {(Overview === true && (
-        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
-      )) ||
-        (Structure === false && (
-          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
-        )) ||
-        (Surface === true && (
-          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
-        ))}
+
       {(Overview === true && (
         <PlanetDes
           title="Uranus"
@@ -71,8 +63,19 @@ const Uranus = () => {
             des="The composition of Uranus's atmosphere is different from its bulk, consisting mainly of molecular hydrogen and helium. The helium molar fraction, i.e. the number of helium atoms per molecule of gas, is 0.15±0.03 in the upper troposphere."
           />
         ))}
-
-      <PlanetFactCards />
+      {(Overview === true && (
+        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+      )) ||
+        (Structure === false && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+        )) ||
+        (Surface === true && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+        ))}
+      <PlanetCards title="Rotation Time" des="17.2 Hours" />
+      <PlanetCards title="Revolution Time" des="84 Years" />
+      <PlanetCards title="Radius" des="25,362 Km" />
+      <PlanetCards title="Average Temp." des="-195 C" />
     </div>
   );
 };

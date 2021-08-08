@@ -1,10 +1,10 @@
 import PlanetLink from "../components/PlanetLink";
 import PlanetImage from "../components/PlanetImage";
-import PlanetDes from "../components/Card";
+import PlanetDes from "../components/PlanentDes";
 import saturn from "../assets/planet-saturn.svg";
 import saturnInternal from "../assets/planet-saturn-internal.svg";
 import saturnSurface from "../assets/geology-saturn.svg";
-import PlanetFactCards from "../Layout/PlanetFactCards";
+import PlanetCards from "../components/PlanetCard";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
 
@@ -45,15 +45,7 @@ const Saturn = () => {
       {(Overview === true && <PlanetImage image={saturn} />) ||
         (Structure === false && <PlanetImage image={saturnInternal} />) ||
         (Surface === true && <PlanetImage image={saturnSurface} />)}
-      {(Overview === true && (
-        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
-      )) ||
-        (Structure === false && (
-          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
-        )) ||
-        (Surface === true && (
-          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
-        ))}
+
       {(Overview === true && (
         <PlanetDes
           title="Saturn"
@@ -72,8 +64,19 @@ const Saturn = () => {
             des="The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume. The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles with a smaller amount of rocky debris and dust."
           />
         ))}
-
-      <PlanetFactCards />
+      {(Overview === true && (
+        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+      )) ||
+        (Structure === false && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+        )) ||
+        (Surface === true && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+        ))}
+      <PlanetCards title="Rotation Time" des="10.8 Hours" />
+      <PlanetCards title="Revolution Time" des="29.46 Years" />
+      <PlanetCards title="Radius" des="58,232 Km" />
+      <PlanetCards title="Average Temp." des="-138 C" />
     </div>
   );
 };

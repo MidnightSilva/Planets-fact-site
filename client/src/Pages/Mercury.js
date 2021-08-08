@@ -1,10 +1,10 @@
 import PlanetImage from "../components/PlanetImage"; 
-import PlanetDes from "../components/Card";
+import PlanetDes from "../components/PlanentDes";
 import PlanetLink from "../components/PlanetLink";
 import mercury from "../assets/planet-mercury.svg";
 import mercuryInternal from "../assets/planet-mercury-internal.svg";
 import mercurySurface from "../assets/geology-mercury.svg";
-import PlanetFactCards from "../Layout/PlanetFactCards";
+import PlanetCards from "../components/PlanetCard"
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
 
@@ -48,15 +48,6 @@ const Mercury = ( props ) => {
         (Surface === true && <PlanetImage image={mercurySurface} />)}
 
       {(Overview === true && (
-        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
-      )) ||
-        (Structure === false && (
-          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
-        )) ||
-        (Surface === true && (
-          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
-        ))}
-      {(Overview === true && (
         <PlanetDes
           title="Mercury"
           des="Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth"
@@ -74,7 +65,19 @@ const Mercury = ( props ) => {
             des="Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s."
           />
         ))}
-      <PlanetFactCards />
+      {(Overview === true && (
+        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+      )) ||
+        (Structure === false && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+        )) ||
+        (Surface === true && (
+          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+        ))}
+      <PlanetCards title="Rotation Time" des="58.6 Days" />
+      <PlanetCards title="Revolution Time" des="87.97 Days" />
+      <PlanetCards title="Radius" des="2,439.7 2,439.7 Km" />
+      <PlanetCards title="Average Temp." des="430 C" />
     </div>
   );
 };
