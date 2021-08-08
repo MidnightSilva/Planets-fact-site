@@ -20,7 +20,7 @@ const Mercury = ( props ) => {
 
   return (
     <div className="page-container">
-      <div className="button-container">
+      <div className="btn-container">
         <button
           className="planet-btn"
           onClick={() => togglePlanetDescription(!togglePlanetDescription)}

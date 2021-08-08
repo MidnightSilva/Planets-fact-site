@@ -19,7 +19,7 @@ const Uranus = () => {
   } = useContext(PlanetContext);
   return (
     <div className="page-container">
-      <div className="button-container">
+      <div className="btn-container">
         <button
           className="planet-btn"
           onClick={() => togglePlanetDescription(!togglePlanetDescription)}
