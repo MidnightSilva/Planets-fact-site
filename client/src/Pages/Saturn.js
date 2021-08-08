@@ -77,7 +77,6 @@ const Saturn = () => {
       <PlanetCards title="Revolution Time" des="29.46 Years" />
       <PlanetCards title="Radius" des="58,232 Km" />
       <PlanetCards title="Average Temp." des="-138 C" />
-      <div className="space" />
     </div>
   );
 };

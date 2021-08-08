@@ -77,7 +77,6 @@ const Mars = () => {
       <PlanetCards title="Revolution Time" des="1.88 Years" />
       <PlanetCards title="Radius" des="3,389.5 Km" />
       <PlanetCards title="Average Temp." des="-28 C" />
-      <div className="space" />
     </div>
   );
 };

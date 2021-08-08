@@ -77,7 +77,6 @@ const Venus = () => {
       <PlanetCards title="Revolution Time" des="224.7 Days" />
       <PlanetCards title="Radius" des="6,051.8 Km" />
       <PlanetCards title="Average Temp." des="471 c" />
-      <div className="space" />
     </div>
   );
 };

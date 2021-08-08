@@ -78,7 +78,6 @@ const Neptune = () => {
       <PlanetCards title="Revolution Time" des="164.79 Years" />
       <PlanetCards title="Radius" des="24,622 Km" />
       <PlanetCards title="Average Temp." des="-201 c" />
-      <div className="space" />
     </div>
   );
 };
