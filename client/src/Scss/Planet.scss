@@ -15,6 +15,8 @@ align-self: center;
 }
 .planet-name{
 font-family:$font;
+font-size: 40px;
+line-height: 52px;
 text-transform: uppercase;
 letter-spacing: .8px;
 }
@@ -39,11 +41,15 @@ margin-left: 6px;
 }
 //planet card 
 .planet-Card-container{
+    letter-spacing: 0.727273px;
+    line-height: 16px;
+    font-weight: bold;
 display: flex;
 justify-content: space-between;
 align-items: baseline;
 border: solid 1px  rgba(255, 255, 255, 0.336);;
 padding: 9px 24px 13px;
+    margin: 2px 18px 24px;
 margin-bottom: 8px;
 }
 .planet-card-name{
@@ -58,9 +64,9 @@ margin-bottom: 8px;
     text-transform: uppercase;
 }
 //bottom page space
-.space{
-    height: 3vh;
-}
+// .space{
+//     height: 3vh;
+// }
 
 // div:last-child{
 //     margin-bottom: 10px;
