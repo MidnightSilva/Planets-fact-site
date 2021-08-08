@@ -1,7 +1,20 @@
-
+@import "./Variables.scss";
+.btn-container{
+    border-bottom: solid 1px;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-around;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    font-family: $font-planet-card;
+}
 
 .planet-btn{
-        background: none;
+
+}
+
+button{
+            background: none;
     color: inherit;
     border: none;
     padding: 0;
