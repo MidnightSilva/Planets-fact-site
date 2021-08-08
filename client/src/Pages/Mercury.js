@@ -76,7 +76,7 @@ const Mercury = ( props ) => {
         ))}
       <PlanetCards title="Rotation Time" des="58.6 Days" />
       <PlanetCards title="Revolution Time" des="87.97 Days" />
-      <PlanetCards title="Radius" des="2,439.7 2,439.7 Km" />
+      <PlanetCards title="Radius" des="2,439.7 Km" />
       <PlanetCards title="Average Temp." des="430 C" />
     </div>
   );

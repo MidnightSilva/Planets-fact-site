@@ -1,4 +1,5 @@
 @import "./Variables.scss";
+
 .btn-container{
     border-bottom: solid 1px;
     padding: 20px 24px;
@@ -7,10 +8,6 @@
     mix-blend-mode: normal;
     opacity: 0.5;
     font-family: $font-planet-card;
-}
-
-.planet-btn{
-
 }
 
 button{

@@ -27,7 +27,7 @@ text-align: center;
 .link-container-outside{
 @include Hcenter();
 color: rgba(255, 255, 255, 0.336);
-    margin-bottom: 28p
+    margin-bottom: 28px;
 }
 .link{
 color: rgba(255, 255, 255, 0.336);
@@ -56,4 +56,8 @@ margin-bottom: 8px;
     font-family: $font;
     font-size: $planet-card-des-font-size;
     text-transform: uppercase;
+}
+
+div:last-child{
+    margin-bottom: 10px;
 }
