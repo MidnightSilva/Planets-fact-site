@@ -15,6 +15,15 @@ body{
     justify-content: center;
 }
 
+.btn-container{
+    border-bottom: solid 1px;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-around;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
 a{
   text-decoration: none;
 }
