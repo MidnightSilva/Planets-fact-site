@@ -1,21 +1,23 @@
 @import "./Variables.scss";
 
 p{
-    color:$text-color;
+color:$text-color;
 }
 
 nav{
-    margin: 0;
+position: absolute;
+width: 100%;
+top: 0;
 }
 .nav-top{
-        border-bottom: solid 1px rgba(255, 255, 255, 0.336);
-    padding: 16px 24px;
+border-bottom: solid 1px rgba(255, 255, 255, 0.336);
+padding: 16px 24px;
 @include rowspacebetween ();
 
 }
 .nav-title{
-    font-size:$nav-title-m;
-    font-family: Antonio;
+font-size:$nav-title-m;
+font-family: Antonio;
 font-style: normal;
 font-weight: normal;
 font-size: 28px;
@@ -25,27 +27,29 @@ text-transform: uppercase;
 margin:0;
 }
 .hamburgerMenu{   
-    width: 24px;
-    height: 17px;
+width: 24px;
+height: 17px;
 }
 .nav-links-container{
-    background:$background-color;
-    height: 100vh;
+background:$background-color;
+height: 100vh;
+margin-top: -8px;
+
 }
 .link-container{
-  display: flex;
-    justify-content: space-between;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.336);
-    mix-blend-mode: normal;
-    margin: 20px 24px 32px 20px;
-    text-decoration: none;
+display: flex;
+justify-content: space-between;
+border-bottom: solid 1px rgba(255, 255, 255, 0.336);
+mix-blend-mode: normal;
+margin: 20px 24px 32px 20px;
+text-decoration: none;
 }
 
 .right-container{
-    align-items: center;
-    width: 17.7rem;
-    display: flex;
-    margin: 0px 7px;
+align-items: center;
+width: 17.7rem;
+display: flex;
+margin: 0px 7px;
 }
 
 .nav-planets{
@@ -60,7 +64,7 @@ letter-spacing: 1.36364px;
 text-transform: uppercase;
 }
 .nav-planets-icon{
-    height: 2rem;
+height: 2rem;
 }
 
 .nav-arrow{}
