@@ -3,7 +3,7 @@
 .btn-container{
     height: 20px;
     overflow: visible;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.336);;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.336);
     padding: 20px 24px;
     display: flex;
     justify-content: space-around;
@@ -12,6 +12,16 @@
 
 .planet-btn{
   font-size: 12px;
+    font-weight: bold;
+    line-height: 10px;
+    text-align: center;
+    letter-spacing: 1.92857px;
+    color: rgba(255, 255, 255, 0.336);;
+}
+
+.planet-btn.show{
+  color: white;
+    font-size: 12px;
     font-weight: bold;
     line-height: 10px;
     text-align: center;
@@ -26,16 +36,15 @@ button{
     cursor: pointer;
     outline: inherit;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.336);;
 }
 
 
 
 
-button:focus{
-  color: white;
-}
+// button:focus{
+//   color: white;
+// }
 
-button:active{
-  color: white;
-}
+// button:active{
+//   color: white;
+// }
