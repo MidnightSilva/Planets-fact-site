@@ -43,9 +43,15 @@ const Neptune = () => {
           Surface
         </button>
       </div>
-      {(Overview === true && <PlanetImage image={neptune} />) ||
-        (Structure === false && <PlanetImage image={neptuneInternal} />) ||
-        (Surface === true && <PlanetImage image={neptuneSurface} />)}
+      {(Overview === true && (
+        <PlanetImage className="planet" image={neptune} />
+      )) ||
+        (Structure === false && (
+          <PlanetImage className="planet" image={neptuneInternal} />
+        )) ||
+        (Surface === true && (
+          <PlanetImage className="planet-surface" image={neptuneSurface} />
+        ))}
 
       {(Overview === true && (
         <PlanetDes

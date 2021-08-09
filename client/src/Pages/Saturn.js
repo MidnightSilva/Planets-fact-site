@@ -42,9 +42,15 @@ const Saturn = () => {
           Surface
         </button>
       </div>
-      {(Overview === true && <PlanetImage image={saturn} />) ||
-        (Structure === false && <PlanetImage image={saturnInternal} />) ||
-        (Surface === true && <PlanetImage image={saturnSurface} />)}
+      {(Overview === true && (
+        <PlanetImage className="planet" image={saturn} />
+      )) ||
+        (Structure === false && (
+          <PlanetImage className="planet" image={saturnInternal} />
+        )) ||
+        (Surface === true && (
+          <PlanetImage className="planet-surface" image={saturnSurface} />
+        ))}
 
       {(Overview === true && (
         <PlanetDes

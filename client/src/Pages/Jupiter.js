@@ -45,9 +45,15 @@ const Jupiter = () => {
           Surface
         </button>
       </div>
-      {(Overview === true && <PlanetImage image={jupiter} />) ||
-        (Structure === false && <PlanetImage image={jupiterInternal} />) ||
-        (Surface === true && <PlanetImage image={jupiterSurface} />)}
+      {(Overview === true && (
+        <PlanetImage className="planet" image={jupiter} />
+      )) ||
+        (Structure === false && (
+          <PlanetImage className="planet" image={jupiterInternal} />
+        )) ||
+        (Surface === true && (
+          <PlanetImage className="planet-surface" image={jupiterSurface} />
+        ))}
 
       {(Overview === true && (
         <PlanetDes

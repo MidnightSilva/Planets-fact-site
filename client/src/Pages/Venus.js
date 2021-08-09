@@ -43,9 +43,15 @@ const Venus = () => {
           Surface
         </button>
       </div>
-      {(Overview === true && <PlanetImage image={venus} />) ||
-        (Structure === false && <PlanetImage image={venusInternal} />) ||
-        (Surface === true && <PlanetImage image={venusSurface} />)}
+      {(Overview === true && (
+        <PlanetImage className="planet" image={venus} />
+      )) ||
+        (Structure === false && (
+          <PlanetImage className="planet" image={venusInternal} />
+        )) ||
+        (Surface === true && (
+          <PlanetImage className="planet-surface" image={venusSurface} />
+        ))}
       {(Overview === true && (
         <PlanetDes
           title="Venus"

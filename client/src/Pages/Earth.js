@@ -42,9 +42,15 @@ const Earth = (props) => {
           Surface
         </button>
       </div>
-      {(Overview === true && <PlanetImage image={earth} />) ||
-        (Structure === false && <PlanetImage image={earthInternal} />) ||
-        (Surface === true && <PlanetImage image={earthSurface} />)}
+      {(Overview === true && (
+        <PlanetImage className="planet" image={earth} />
+      )) ||
+        (Structure === false && (
+          <PlanetImage className="planet" image={earthInternal} />
+        )) ||
+        (Surface === true && (
+          <PlanetImage className="planet-surface" image={earthSurface} />
+        ))}
 
       {(Overview === true && (
         <PlanetDes

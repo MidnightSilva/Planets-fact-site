@@ -43,9 +43,15 @@ const Mercury = ( props ) => {
         </button>
       </div>
 
-      {(Overview === true && <PlanetImage image={mercury} />) ||
-        (Structure === false && <PlanetImage image={mercuryInternal} />) ||
-        (Surface === true && <PlanetImage image={mercurySurface} />)}
+      {(Overview === true && (
+        <PlanetImage className="planet" image={mercury} />
+      )) ||
+        (Structure === false && (
+          <PlanetImage className="planet" image={mercuryInternal} />
+        )) ||
+        (Surface === true && (
+          <PlanetImage className="planet-surface" image={mercurySurface} />
+        ))}
 
       {(Overview === true && (
         <PlanetDes

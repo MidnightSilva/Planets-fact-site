@@ -9,6 +9,14 @@ margin: 29px 27px;
 padding: 95px 132px;
 align-self: center;
 } 
+
+.planet-surface{
+height: $Planet-height-mobile-Surface-Geology;
+width: $planet-width-mobile;
+margin: 29px 27px;
+padding: 54px 132px;
+align-self: center;
+}
 // planet content container
 .planet-content-container{
 @include VCenter();

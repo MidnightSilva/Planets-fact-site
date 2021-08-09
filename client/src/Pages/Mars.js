@@ -42,9 +42,13 @@ const Mars = () => {
           Surface
         </button>
       </div>
-      {(Overview === true && <PlanetImage image={mars} />) ||
-        (Structure === false && <PlanetImage image={marsInternal} />) ||
-        (Surface === true && <PlanetImage image={marsSurface} />)}
+      {(Overview === true && <PlanetImage className="planet" image={mars} />) ||
+        (Structure === false && (
+          <PlanetImage className="planet" image={marsInternal} />
+        )) ||
+        (Surface === true && (
+          <PlanetImage className="planet-surface" image={marsSurface} />
+        ))}
 
       {(Overview === true && (
         <PlanetDes
