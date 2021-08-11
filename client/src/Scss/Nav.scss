@@ -33,11 +33,13 @@ height: 17px;
 .hamburgerMenu.show{
 
 }
+ 
 .nav-links-container{
  display:none;
-}
-.nav-links-container .Show{
-  background:$background-color;
+} 
+div.nav-links-container.show{
+display: block;
+background:$background-color;
 height: 100vh;
 margin-top: -8px;
 }  

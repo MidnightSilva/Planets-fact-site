@@ -20,7 +20,7 @@ const { toggleHamburgerMenu, hamburgermenu } = useContext(PlanetContext);
   return (
     //add the conditional rendering className for the Hamburger menu here
     <div
-      className={`nav-links-container${hamburgermenu ? 'Show' : ""}`}
+      className={`nav-links-container ${hamburgermenu ? "show" : ""}`}
 >
       <Link to="/">
         <div className="link-container">
