@@ -45,7 +45,7 @@ const value = {
   toggleStructureDescription,
   toggleSurfaceDescription,
   Overview,
-  
+  setHamburgerMenu,
   Structure,
   
   Surface,

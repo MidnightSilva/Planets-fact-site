@@ -15,14 +15,22 @@ import { PlanetContext } from "../Context/AppContext";
 
 const NavLinks =(props) => {
 
-const { toggleHamburgerMenu} = useContext(PlanetContext);
+const { toggleHamburgerMenu, hamburgermenu } = useContext(PlanetContext);
 
   return (
-    <div className="nav-links-container">
+    //add the conditional rendering className for the Hamburger menu here
+    <div
+      className={`nav-links-container${hamburgermenu ? 'Show' : ""}`}
+>
       <Link to="/">
         <div className="link-container">
           <div className="right-container">
-            <img src={mercury} alt="planet" onClick={toggleHamburgerMenu} />
+            <img
+              className="nav-planet"
+              src={mercury}
+              alt="planet"
+              onClick={toggleHamburgerMenu}
+            />
             <p onClick={toggleHamburgerMenu} className="nav-planets">
               Mercury
             </p>
@@ -33,7 +41,12 @@ const { toggleHamburgerMenu} = useContext(PlanetContext);
       <Link to="/venus">
         <div className="link-container">
           <div className="right-container">
-            <img src={venus} alt="planet" onClick={toggleHamburgerMenu} />
+            <img
+              src={venus}
+              className="nav-planet"
+              alt="planet"
+              onClick={toggleHamburgerMenu}
+            />
             <p onClick={toggleHamburgerMenu} className="nav-planets">
               Venus
             </p>
@@ -44,7 +57,12 @@ const { toggleHamburgerMenu} = useContext(PlanetContext);
       <Link to="earth">
         <div className="link-container">
           <div className="right-container">
-            <img src={earth} alt="planet" onClick={toggleHamburgerMenu} />
+            <img
+              src={earth}
+              className="nav-planet"
+              alt="planet"
+              onClick={toggleHamburgerMenu}
+            />
             <p onClick={toggleHamburgerMenu} className="nav-planets">
               Earth
             </p>
@@ -55,7 +73,12 @@ const { toggleHamburgerMenu} = useContext(PlanetContext);
       <Link to="/mars">
         <div className="link-container">
           <div className="right-container">
-            <img src={mars} alt="planet" onClick={toggleHamburgerMenu} />
+            <img
+              src={mars}
+              alt="planet"
+              className="nav-planet"
+              onClick={toggleHamburgerMenu}
+            />
             <p onClick={toggleHamburgerMenu} className="nav-planets">
               Mars
             </p>
@@ -67,7 +90,12 @@ const { toggleHamburgerMenu} = useContext(PlanetContext);
         {" "}
         <div className="link-container">
           <div className="right-container">
-            <img src={jupiter} alt="planet" onClick={toggleHamburgerMenu} />
+            <img
+              src={jupiter}
+              className="nav-planet"
+              alt="planet"
+              onClick={toggleHamburgerMenu}
+            />
             <p onClick={toggleHamburgerMenu} className="nav-planets">
               jupiter
             </p>
@@ -79,7 +107,12 @@ const { toggleHamburgerMenu} = useContext(PlanetContext);
         {" "}
         <div className="link-container">
           <div className="right-container">
-            <img src={saturn} alt="planet" onClick={toggleHamburgerMenu} />
+            <img
+              src={saturn}
+              alt="planet"
+              className="nav-planet"
+              onClick={toggleHamburgerMenu}
+            />
             <p onClick={toggleHamburgerMenu} className="nav-planets">
               Saturn
             </p>
@@ -91,7 +124,12 @@ const { toggleHamburgerMenu} = useContext(PlanetContext);
         {" "}
         <div className="link-container">
           <div className="right-container">
-            <img src={uranus} alt="planet" onClick={toggleHamburgerMenu} />
+            <img
+              src={uranus}
+              alt="planet"
+              className="nav-planet"
+              onClick={toggleHamburgerMenu}
+            />
             <p onClick={toggleHamburgerMenu} className="nav-planets">
               Uranus
             </p>
@@ -103,7 +141,12 @@ const { toggleHamburgerMenu} = useContext(PlanetContext);
         {" "}
         <div className="link-container">
           <div className="right-container">
-            <img src={neptune} alt="planet" onClick={toggleHamburgerMenu} />
+            <img
+              src={neptune}
+              alt="planet"
+              className="nav-planet"
+              onClick={toggleHamburgerMenu}
+            />
             <p onClick={toggleHamburgerMenu} className="nav-planets">
               Neptune
             </p>
