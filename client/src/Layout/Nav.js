@@ -1,8 +1,7 @@
 import hamburgerMenuDisabled from '../assets/hamburgerMenuFaded.svg'
 import hamburgerMenu from "../assets/hamburgerMenu.svg";
-import NavLinks from "../components/NavLinks";
-// import { useState } from "react";
- // eslint-disable-next-line
+import NavLinksMobile from "../components/NavLinksMobile";
+import NavLinks from "../components/NavLinks"; 
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
 
@@ -10,24 +9,6 @@ const Nav = (props) => {
 
 const { toggleHamburgerMenu, hamburgermenu } =
   useContext(PlanetContext);
-// const [size, setSize] = useState ([window.innerWidth]);
-
-// useEffect(() =>{
-//   console.log("is this looping???");
-//   const handleWindowStateChange = () => {
-//     setSize(window.innerWidth);
-//     if (size <= 768) {
-//       setHamburgerMenu(true);
-//     }
-//   };
-//   window.addEventListener("resize", handleWindowStateChange);
-//   // eslint-disable-next-line
-// },[size, hamburgermenu])
-// console.log(size)
-
-
-
-
     return (
       <nav>
         <div className="nav-top">
@@ -44,11 +25,12 @@ const { toggleHamburgerMenu, hamburgermenu } =
             <img
               src={hamburgerMenu}
               alt="hamburgermenu-logo"
-           className={`hamburgerMenu ${hamburgerMenu ? 'Show' : ''}`}
+              className={`hamburgerMenu ${hamburgerMenu ? "Show" : ""}`}
               onClick={toggleHamburgerMenu}
             />
           )}
         </div>
+        <NavLinksMobile />
         <NavLinks />
       </nav>
     );

@@ -79,10 +79,12 @@ const Venus = () => {
         (Surface === true && (
           <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
         ))}
+        <div className="planet-cards-container">
       <PlanetCards title="Rotation Time" des="243 Days" />
       <PlanetCards title="Revolution Time" des="224.7 Days" />
       <PlanetCards title="Radius" des="6,051.8 Km" />
       <PlanetCards title="Average Temp." des="471 c" />
+      </div>
     </div>
   );
 };

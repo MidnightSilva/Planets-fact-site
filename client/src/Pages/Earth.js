@@ -79,10 +79,12 @@ const Earth = (props) => {
         (Surface === true && (
           <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
         ))}
+        <div className="planet-cards-container">
       <PlanetCards title="Rotation Time" des=".99 Days" />
       <PlanetCards title="Revolution Time" des="365.26 Days" />
       <PlanetCards title="Radius" des="6,371 Km" />
       <PlanetCards title="Average Temp." des="16 C" />
+      </div>
     </div>
   );
 };

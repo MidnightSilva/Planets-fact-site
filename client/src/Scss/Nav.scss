@@ -33,11 +33,19 @@ height: 17px;
 .hamburgerMenu.show{
 
 }
- 
+//nav for tablet & desktop
 .nav-links-container{
+display: none;
+}
+.nav-links-container.show{
+display: none;
+}
+
+//nav for mobile
+.nav-links-container-mobile{
  display:none;
 } 
-div.nav-links-container.show{
+div.nav-links-container-mobile.show{
 display: block;
 background:$background-color;
 height: 100vh;
@@ -93,6 +101,9 @@ width: fit-content;
     margin-top: 0px;
     height: fit-content;
 }
+div.nav-links-container.show{
+display: none;
+}  
 .link-container {
     display: flex; 
     justify-content: space-between; 

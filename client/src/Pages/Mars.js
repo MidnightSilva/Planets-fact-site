@@ -77,10 +77,13 @@ const Mars = () => {
         (Surface === true && (
           <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
         ))}
+          <div className="planet-cards-container">
       <PlanetCards title="Rotation Time" des="1.03 Days" />
       <PlanetCards title="Revolution Time" des="1.88 Years" />
       <PlanetCards title="Radius" des="3,389.5 Km" />
       <PlanetCards title="Average Temp." des="-28 C" />
+      </div>
+
     </div>
   );
 };

@@ -78,10 +78,12 @@ const Uranus = () => {
         (Surface === true && (
           <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
         ))}
+        <div className="planet-cards-container">
       <PlanetCards title="Rotation Time" des="17.2 Hours" />
       <PlanetCards title="Revolution Time" des="84 Years" />
       <PlanetCards title="Radius" des="25,362 Km" />
       <PlanetCards title="Average Temp." des="-195 C" />
+      </div>
     </div>
   );
 };

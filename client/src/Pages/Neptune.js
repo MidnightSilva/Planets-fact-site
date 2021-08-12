@@ -80,10 +80,12 @@ const Neptune = () => {
         (Surface === true && (
           <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
         ))}
+         <div className="planet-cards-container">
       <PlanetCards title="Rotation Time" des="16.08 Hours" />
       <PlanetCards title="Revolution Time" des="164.79 Years" />
       <PlanetCards title="Radius" des="24,622 Km" />
       <PlanetCards title="Average Temp." des="-201 c" />
+      </div>
     </div>
   );
 };

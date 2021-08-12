@@ -79,10 +79,12 @@ const Saturn = () => {
         (Surface === true && (
           <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
         ))}
-      <PlanetCards title="Rotation Time" des="10.8 Hours" />
-      <PlanetCards title="Revolution Time" des="29.46 Years" />
-      <PlanetCards title="Radius" des="58,232 Km" />
-      <PlanetCards title="Average Temp." des="-138 C" />
+      <div className="planet-cards-container">
+        <PlanetCards title="Rotation Time" des="10.8 Hours" />
+        <PlanetCards title="Revolution Time" des="29.46 Years" />
+        <PlanetCards title="Radius" des="58,232 Km" />
+        <PlanetCards title="Average Temp." des="-138 C" />
+      </div>
     </div>
   );
 };

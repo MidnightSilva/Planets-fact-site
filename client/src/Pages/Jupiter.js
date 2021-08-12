@@ -82,10 +82,12 @@ const Jupiter = () => {
         (Surface === true && (
           <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
         ))}
-      <PlanetCards title="Rotation Time" des="9.93 Hours" />
-      <PlanetCards title="Revolution Time" des="11.86 Years" />
-      <PlanetCards title="Radius" des="69,911 Km" />
-      <PlanetCards title="Average Temp." des="-108 C" />
+      <div className="planet-cards-container">
+        <PlanetCards title="Rotation Time" des="9.93 Hours" />
+        <PlanetCards title="Revolution Time" des="11.86 Years" />
+        <PlanetCards title="Radius" des="69,911 Km" />
+        <PlanetCards title="Average Temp." des="-108 C" />
+      </div>
     </div>
   );
 };
