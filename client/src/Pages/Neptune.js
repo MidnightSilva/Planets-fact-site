@@ -52,39 +52,64 @@ const Neptune = () => {
         (Surface === true && (
           <PlanetImage className="planet-surface" image={neptuneSurface} />
         ))}
-
-      {(Overview === true && (
-        <PlanetDes
-          title="Neptune"
-          des="Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus."
-        />
-      )) ||
-        (Structure === false && (
-          <PlanetDes
-            title="Neptune"
-            des="Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions."
-          />
-        )) ||
-        (Surface === true && (
-          <PlanetDes
-            title="Neptune"
-            des="Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum."
-          />
-        ))}
-      {(Overview === true && (
-        <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
-      )) ||
-        (Structure === false && (
-          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
-        )) ||
-        (Surface === true && (
-          <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
-        ))}
-         <div className="planet-cards-container">
-      <PlanetCards title="Rotation Time" des="16.08 Hours" />
-      <PlanetCards title="Revolution Time" des="164.79 Years" />
-      <PlanetCards title="Radius" des="24,622 Km" />
-      <PlanetCards title="Average Temp." des="-201 c" />
+      <div className="planet-des--btn-container">
+        <div className="planet-des-wiki-container">
+          {(Overview === true && (
+            <PlanetDes
+              title="Neptune"
+              des="Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus."
+            />
+          )) ||
+            (Structure === false && (
+              <PlanetDes
+                title="Neptune"
+                des="Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions."
+              />
+            )) ||
+            (Surface === true && (
+              <PlanetDes
+                title="Neptune"
+                des="Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum."
+              />
+            ))}
+          {(Overview === true && (
+            <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+          )) ||
+            (Structure === false && (
+              <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+            )) ||
+            (Surface === true && (
+              <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+            ))}
+        </div>
+        <div className="btn-container-above-tablet">
+          <button
+            className={`planet-btn-above-tablet ${Overview ? "Show" : ""}`}
+            onClick={() => togglePlanetDescription(!togglePlanetDescription)}
+          >
+            Overview
+          </button>
+          <button
+            className={`planet-btn-above-tablet ${Structure ? "" : "Show"}`}
+            onClick={() =>
+              toggleStructureDescription(!toggleStructureDescription)
+            }
+          >
+            Structure
+          </button>
+          <button
+            className={`planet-btn-above-tablet ${Surface ? "Show" : ""}`}
+            onClick={() => toggleSurfaceDescription(!toggleSurfaceDescription)}
+          >
+            Surface
+          </button>
+        </div>
+      </div>
+      <div className="planet-cards-container">
+        <PlanetCards title="Rotation Time" des="16.08 Hours" />
+        <PlanetCards title="Revolution Time" des="164.79 Years" />
+        <PlanetCards title="Radius" des="24,622 Km" />
+        <PlanetCards title="Average Temp." des="-201 c" />
       </div>
     </div>
   );

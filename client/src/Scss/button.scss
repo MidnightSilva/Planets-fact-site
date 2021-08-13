@@ -8,7 +8,9 @@ display: flex;
 justify-content: space-around;
 font-family: $font-planet-card;
 }
-
+.btn-container-above-tablet{
+   display: hidden;
+}
 .planet-btn{
 font-size: 12px;
 font-weight: bold;
@@ -17,7 +19,14 @@ text-align: center;
 letter-spacing: 1.92857px;
 color: rgba(255, 255, 255, 0.336);;
 }
-
+//buttons for tablet & above
+.planet-btn-above-tablet{
+   display: hidden;
+}
+.planet-btn-above-tablet.Show{
+   display: hidden;
+    
+}
 .planet-btn.show{
 color: white;
 font-size: 12px;
@@ -41,9 +50,59 @@ text-transform: uppercase;
 
 //tablet Media Queries
 @media screen and (min-width: 768px) {
-    .btn-container{
-        order:2;
-    }
+// .btn-container{
+// order:2;
+// width: 50%;
+// flex-direction: column;
+// order: 2;
+// }
+.planet-des--btn-container{
+    display: flex;
+    align-items: center;
+    order: 2;
+}
+.planet-des-wiki-container{
+    display: flex;
+    flex-direction: column;
+    width: 64%;
+}
+.btn-container{
+    display: none;
+}
+.planet-btn{
+    display: none;
+}
+.planet-btn.show{
+    display: none;
+}
+.btn-container-above-tablet{
+        width: 35%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 11rem;
+overflow: visible;
+padding: 20px 24px;
+font-family: $font-planet-card;
+}
+.planet-btn-above-tablet{
+font-size: 12px;
+font-weight: bold;
+line-height: 10px;
+text-align: center;
+letter-spacing: 1.92857px;
+color: rgba(255, 255, 255, 0.336);;
+}
+.planet-btn-above-tablet .Show{
+color: white;
+font-size: 12px;
+font-weight: bold;
+line-height: 10px;
+text-align: center;
+letter-spacing: 1.92857px;
+    
+}
+
 }
 
 

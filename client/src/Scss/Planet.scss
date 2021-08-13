@@ -75,17 +75,25 @@ margin-bottom: 8px;
 //tablet Media Queries
 @media screen and (min-width: 768px) {
 .planet{
-    order: 1;
+order: 1;
 }
-  .planet-Card-container{
-      order: 3;
-          order: 3;
-    display: inline-block;
-    width: 21%;
+.planet-Card-container{
+order: 3;
+display: inline-block;
+width: 21%;
+}  
+.link-container-outside{
+order: 4;
+width: 50%;
+}
+.planet-content-container {
+order: 4;
+width: 50%;
+}
 
-  }  
-
-
+.planet-cards-container{
+order: 6;
+}
 
 
 
