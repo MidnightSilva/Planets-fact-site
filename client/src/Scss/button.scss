@@ -9,7 +9,7 @@ justify-content: space-around;
 font-family: $font-planet-card;
 }
 .btn-container-above-tablet{
-   display: hidden;
+visibility: hidden;
 }
 .planet-btn{
 font-size: 12px;
@@ -21,10 +21,10 @@ color: rgba(255, 255, 255, 0.336);;
 }
 //buttons for tablet & above
 .planet-btn-above-tablet{
-   display: hidden;
+   visibility: hidden;
 }
 .planet-btn-above-tablet.Show{
-   display: hidden;
+   visibility: hidden;
     
 }
 .planet-btn.show{
@@ -76,6 +76,7 @@ text-transform: uppercase;
     display: none;
 }
 .btn-container-above-tablet{
+       visibility: visible;
         width: 35%;
 display: flex;
 flex-direction: column;
@@ -86,6 +87,7 @@ padding: 20px 24px;
 font-family: $font-planet-card;
 }
 .planet-btn-above-tablet{
+       visibility: visible;
 font-size: 12px;
 font-weight: bold;
 line-height: 10px;
