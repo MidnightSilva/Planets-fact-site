@@ -21,10 +21,10 @@ color: rgba(255, 255, 255, 0.336);;
 }
 //buttons for tablet & above
 .planet-btn-above-tablet{
-   visibility: hidden;
+display: none;
 }
 .planet-btn-above-tablet.Show{
-   visibility: hidden;
+display: none;
     
 }
 .planet-btn.show{
@@ -56,7 +56,11 @@ text-transform: uppercase;
 // flex-direction: column;
 // order: 2;
 // }
+.btn-container-above-tablet {
+    visibility: visible;
+}
 .planet-des--btn-container{
+    padding: 1rem 2.2rem;
     display: flex;
     align-items: center;
     order: 2;
@@ -73,37 +77,94 @@ text-transform: uppercase;
     display: none;
 }
 .planet-btn.show{
-    display: none;
+display: none;
 }
 .btn-container-above-tablet{
-       visibility: visible;
-        width: 35%;
+display: block;
+width: 35%;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 height: 11rem;
+align-self: flex-end;
 overflow: visible;
-padding: 20px 24px;
+    padding: 52px 25px;
 font-family: $font-planet-card;
 }
 .planet-btn-above-tablet{
-       visibility: visible;
-font-size: 12px;
+width: 281px;
+height: 40px;
+display: block;
+visibility: visible;
+font-size: $btn-font-tablet;
 font-weight: bold;
 line-height: 10px;
 text-align: center;
 letter-spacing: 1.92857px;
-color: rgba(255, 255, 255, 0.336);;
-}
-.planet-btn-above-tablet .Show{
+    width: 9rem;
 color: white;
-font-size: 12px;
+}
+.planet-btn-above-tablet.Show{
+    display: flex;
+justify-content: center;
+align-items: center;
+display: block;
+color: white;
+font-size: $btn-font-tablet;
 font-weight: bold;
 line-height: 10px;
-text-align: center;
-letter-spacing: 1.92857px;
-    
+    width: 9rem;
 }
+ div span{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 9px;
+    line-height: 25px;
+    margin-left: 2rem;
+}
+.btn-tablet-container{
+        width: 281px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px rgba(255, 255, 255, 0.336);
+}
+.btn-tablet-container-m{
+    background: #419EBB;
+    width: 281px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px rgba(255, 255, 255, 0.336);
+}
+// button color change 
+
+//mercury 
+
+//Venus 
+
+//earth 
+
+//Mars
+
+//Jupiter 
+
+//Saturn 
+
+//Uranus
+
+//Neptune
+
+
+
+
+
+
 
 }
 

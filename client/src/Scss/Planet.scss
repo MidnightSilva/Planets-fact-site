@@ -76,6 +76,14 @@ margin-bottom: 8px;
 @media screen and (min-width: 768px) {
 .planet{
 order: 1;
+height:$Planet-height-tablet;
+width: $Planet-height-tablet;
+
+}
+.planet-surface{
+   order: 1;
+height:$Planet-height-tablet-Surface-Geology;
+width: $Planet-height-tablet-Surface-Geology; 
 }
 .planet-Card-container{
         margin: 0px 13px;
@@ -89,31 +97,33 @@ order: 4;
 width: 50%;
 }
 .planet-content-container {
-    padding: 37px 29px;
-    align-items: flex-start;
-    order: 4;
-    width: 100%;
+padding: 1px 2px;
+align-items: flex-start;
+order: 4;
+width: 100%;
 }
 
 .planet-cards-container{
-    order: 6;
-    display: flex;
-    justify-content: center;
+order: 6;
+display: flex;
+justify-content: center;
+margin-bottom: 2rem;
 }
 
 
 .planet-info{
-    width: fit-content;
-    text-align: left;
+width: 75%;
+text-align: left;
 }
 
 .planet-card-name{
-    font-size: 8px;
+font-size: 8px;
 }
 
 .planet-card-info{
 font-size: 24px;
 line-height: 31px;
+letter-spacing: -0.5px;
 }
 
 }

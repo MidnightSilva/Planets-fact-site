@@ -5,14 +5,13 @@ import mercury from "../assets/planet-mercury.svg";
 import mercuryInternal from "../assets/planet-mercury-internal.svg";
 import mercurySurface from "../assets/geology-mercury.svg";
 import PlanetCards from "../components/PlanetCard"
+import MobileButtons from "../components/mobileButtons";
+import Buttons from "../components/buttons";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
 
 const Mercury = ( props ) => {
   const {
-    togglePlanetDescription,
-    toggleStructureDescription,
-    toggleSurfaceDescription,
     Overview,
     Structure,
     Surface,
@@ -20,29 +19,7 @@ const Mercury = ( props ) => {
 
   return (
     <div className="page-container">
-      <div className="btn-container">
-        <button
-          className={`planet-btn${Overview ? "Show" : ""}`}
-          onClick={() => togglePlanetDescription(!togglePlanetDescription)}
-        >
-          Overview
-        </button>
-        <button
-          className={`planet-btn${Structure ? "" : "Show"}`}
-          onClick={() =>
-            toggleStructureDescription(!toggleStructureDescription)
-          }
-        >
-          Structure
-        </button>
-        <button
-          className={`planet-btn${Surface ? "Show" : ""}`}
-          onClick={() => toggleSurfaceDescription(!toggleSurfaceDescription)}
-        >
-          Surface
-        </button>
-      </div>
-
+      <MobileButtons />
       {(Overview === true && (
         <PlanetImage className="planet" image={mercury} />
       )) ||
@@ -82,28 +59,7 @@ const Mercury = ( props ) => {
               <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
             ))}
         </div>
-        <div className="btn-container-above-tablet">
-          <button
-            className={`planet-btn-above-tablet ${Overview ? "Show" : ""}`}
-            onClick={() => togglePlanetDescription(!togglePlanetDescription)}
-          >
-            Overview
-          </button>
-          <button
-            className={`planet-btn-above-tablet ${Structure ? "" : "Show"}`}
-            onClick={() =>
-              toggleStructureDescription(!toggleStructureDescription)
-            }
-          >
-            Structure
-          </button>
-          <button
-            className={`planet-btn-above-tablet ${Surface ? "Show" : ""}`}
-            onClick={() => toggleSurfaceDescription(!toggleSurfaceDescription)}
-          >
-            Surface
-          </button>
-        </div>
+        <Buttons className="btn-tablet-container-m" />
       </div>
       <div className="planet-cards-container">
         <PlanetCards title="Rotation Time" des="58.6 Days" />

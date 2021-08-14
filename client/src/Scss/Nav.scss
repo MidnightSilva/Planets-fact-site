@@ -89,6 +89,7 @@ height: 2rem;
 @media screen and (min-width: 768px) {
     .nav-top {
     border-bottom: none;
+    justify-content: space-around;
 }
   .hamburgerMenu{   
 display: none;}
@@ -96,10 +97,12 @@ display: none;}
 width: fit-content;
 }
 .nav-links-container{
-        visibility: visible;
-    display: flex;
-    margin-top: 0px;
-    height: fit-content;
+border-bottom: solid 1px rgba(255, 255, 255, 0.336);
+visibility: visible;
+justify-content: center;
+display: flex;
+margin-top: 0px;
+height: fit-content;
 }
 div.nav-links-container.show{
 display: none;
@@ -118,6 +121,6 @@ display: none;
     visibility: hidden; 
 }
 .nav-planets{
-   font-size: 11px; 
+   font-size: $nav-font-tablet; 
 }
 }
