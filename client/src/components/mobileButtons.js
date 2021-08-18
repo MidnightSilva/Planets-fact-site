@@ -3,9 +3,9 @@ import { PlanetContext } from "../Context/AppContext";
 
 function MobileButtons(props) {
   const {
-    togglePlanetDescription,
-    toggleStructureDescription,
-    toggleSurfaceDescription,
+    handleBtnToggleSurface,
+    handleBtnToggleStructure,
+    handleBtnToggleOverview,
     Overview,
     Structure,
     Surface,
@@ -16,21 +16,19 @@ function MobileButtons(props) {
       <div className="btn-container">
         <button
           className={`planet-btn${Overview ? "Show" : ""}`}
-          onClick={() => togglePlanetDescription(!togglePlanetDescription)}
+          onClick={() => handleBtnToggleOverview(!handleBtnToggleOverview)}
         >
           Overview
         </button>
         <button
           className={`planet-btn${Structure ? "" : "Show"}`}
-          onClick={() =>
-            toggleStructureDescription(!toggleStructureDescription)
-          }
+          onClick={() => handleBtnToggleStructure(!handleBtnToggleStructure)}
         >
           Structure
         </button>
         <button
-          className={`planet-btn${Surface ? "" : "Show"}`}
-          onClick={() => toggleSurfaceDescription(!toggleSurfaceDescription)}
+          className={`planet-btn${Surface ? "Show" : ""}`}
+          onClick={() => handleBtnToggleSurface(!handleBtnToggleSurface)}
         >
           Surface
         </button>

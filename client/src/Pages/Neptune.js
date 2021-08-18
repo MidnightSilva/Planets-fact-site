@@ -11,56 +11,49 @@ import { useContext} from "react";
 import { PlanetContext } from "../Context/AppContext";
 const Neptune = () => {
   
-  const {
-    Overview,
-    Structure,
-    Surface,
-  } = useContext(PlanetContext);
-   
+  const { count } = useContext(PlanetContext);
 
   return (
     <div className="page-container">
-      <MobileButtons/>
-      {(Overview === true && (
-        <PlanetImage className="planet" image={neptune} />
-      )) ||
-        (Structure === false && (
+      <MobileButtons />
+      {(count === 1 && <PlanetImage className="planet" image={neptune} />) ||
+        (count === 2 && (
           <PlanetImage className="planet" image={neptuneInternal} />
         )) ||
-        (Surface === true && (
+        (count === 3 && (
           <PlanetImage className="planet-surface" image={neptuneSurface} />
         ))}
       <div className="planet-des--btn-container">
         <div className="planet-des-wiki-container">
-          {(Overview === true && (
+          {(count === 1 && (
             <PlanetDes
               title="Neptune"
               des="Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus."
             />
           )) ||
-            (Structure === false && (
+            (count === 2 && (
               <PlanetDes
                 title="Neptune"
                 des="Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions."
               />
             )) ||
-            (Surface === true && (
+            (count === 3 && (
               <PlanetDes
                 title="Neptune"
                 des="Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum."
               />
             ))}
-          {(Overview === true && (
+          {(count === 1 && (
             <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
           )) ||
-            (Structure === false && (
+            (count === 2 && (
               <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
             )) ||
-            (Surface === true && (
+            (count === 3 && (
               <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
             ))}
         </div>
-       <Buttons/>
+        <Buttons />
       </div>
       <div className="planet-cards-container">
         <PlanetCards title="Rotation Time" des="16.08 Hours" />

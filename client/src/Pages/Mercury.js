@@ -12,50 +12,46 @@ import { PlanetContext } from "../Context/AppContext";
 
 const Mercury = ( props ) => {
   const {
-    Overview,
-    Structure,
-    Surface,
+     count
   } = useContext(PlanetContext);
 
   return (
     <div className="page-container">
       <MobileButtons />
-      {(Overview === true && (
-        <PlanetImage className="planet" image={mercury} />
-      )) ||
-        (Structure === false && (
+      {(count === 1 && <PlanetImage className="planet" image={mercury} />) ||
+        (count === 2 && (
           <PlanetImage className="planet" image={mercuryInternal} />
         )) ||
-        (Surface === true && (
+        (count === 3 && (
           <PlanetImage className="planet-surface" image={mercurySurface} />
         ))}
       <div className="planet-des--btn-container">
         <div className="planet-des-wiki-container">
-          {(Overview === true && (
+          {(count === 1 && (
             <PlanetDes
               title="Mercury"
               des="Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth"
             />
           )) ||
-            (Structure === false && (
+            (count === 2 && (
               <PlanetDes
                 title="Mercury"
                 des="Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density."
               />
             )) ||
-            (Surface === true && (
+            (count === 3 && (
               <PlanetDes
                 title="Mercury"
                 des="Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s."
               />
             ))}
-          {(Overview === true && (
+          {(count === 1  && (
             <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
           )) ||
-            (Structure === false && (
+            (count === 2 && (
               <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
             )) ||
-            (Surface === true && (
+            (count === 3 && (
               <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
             ))}
         </div>

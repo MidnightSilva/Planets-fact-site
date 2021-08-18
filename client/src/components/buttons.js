@@ -3,9 +3,9 @@ import { PlanetContext } from "../Context/AppContext";
 
 function Buttons(props) {
   const {
-    togglePlanetDescription,
-    toggleStructureDescription,
-    toggleSurfaceDescription,
+    handleBtnToggleSurface,
+    handleBtnToggleStructure,
+    handleBtnToggleOverview,
     Overview,
     Structure,
     Surface,
@@ -16,7 +16,7 @@ function Buttons(props) {
         <span>01</span>
         <button
           className={`planet-btn-above-tablet ${Overview ? "Show" : ""}`}
-          onClick={() => togglePlanetDescription(!togglePlanetDescription)}
+          onClick={() => handleBtnToggleOverview(!handleBtnToggleOverview)}
         >
           Overview
         </button>
@@ -25,10 +25,8 @@ function Buttons(props) {
         <span>02</span>
 
         <button
-          className={`planet-btn-above-tablet ${Structure ? "" : "Show"}`}
-          onClick={() =>
-            toggleStructureDescription(!toggleStructureDescription)
-          }
+          className={`planet-btn-above-tablet ${Structure  ? "" : "Show"}`}
+          onClick={() => handleBtnToggleStructure(!handleBtnToggleStructure)}
         >
           Structure
         </button>
@@ -38,7 +36,7 @@ function Buttons(props) {
 
         <button
           className={`planet-btn-above-tablet ${Surface ? "Show" : ""}`}
-          onClick={() => toggleSurfaceDescription(!toggleSurfaceDescription)}
+          onClick={() => handleBtnToggleSurface(!handleBtnToggleSurface)}
         >
           Surface
         </button>

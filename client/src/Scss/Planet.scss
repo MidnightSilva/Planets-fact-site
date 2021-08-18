@@ -13,8 +13,8 @@ align-self: center;
 .planet-surface{
 height: $Planet-height-mobile-Surface-Geology;
 width: $planet-width-mobile;
-margin: 59px 27px;
-    padding: 54px 132px;
+margin: 55px 27px 4.5px;
+padding: 54px 132px;
 align-self: center;
 }
 // planet content container
@@ -82,6 +82,7 @@ width: $Planet-height-tablet;
 }
 .planet-surface{
    order: 1;
+       padding: 54px 132px 53px;
 height:$Planet-height-tablet-Surface-Geology;
 width: $Planet-height-tablet-Surface-Geology; 
 }
