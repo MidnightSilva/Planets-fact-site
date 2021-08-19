@@ -17,7 +17,11 @@ font-weight: bold;
 line-height: 10px;
 text-align: center;
 letter-spacing: 1.92857px;
+}
+.planet-btnShow{
 color: rgba(255, 255, 255, 0.336);;
+border-bottom:solid 1px #419EBB; 
+letter-spacing: 1.92857px;
 }
 //buttons for tablet & above
 .planet-btn-above-tablet{
@@ -27,15 +31,17 @@ display: none;
 display: none;
     
 }
-.planet-btn.show{
+.planet-btn .Show{
 color: white;
 font-size: 12px;
 font-weight: bold;
 line-height: 10px;
 text-align: center;
 letter-spacing: 1.92857px;
+border-bottom:solid 1px #419EBB; 
 }
 button{
+    border-bottom:solid 1px #419EBB; 
 background: none;
 color: inherit;
 border: none;
