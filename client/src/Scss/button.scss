@@ -138,6 +138,8 @@ line-height: 10px;
     align-items: center;
     border: solid 1px rgba(255, 255, 255, 0.336);
 }
+// button color change 
+//mercury 
 .btn-tablet-container-m{
     background: #419EBB;
     width: 281px;
@@ -148,23 +150,88 @@ line-height: 10px;
     align-items: center;
     border: solid 1px rgba(255, 255, 255, 0.336);
 }
-// button color change 
-
-//mercury 
-
 //Venus 
+.btn-tablet-container-v{
+background: #EDA249;
 
+    width: 281px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px rgba(255, 255, 255, 0.336);   
+    
+
+}
 //earth 
+.btn-tablet-container-e{
+
+      background: #6D2ED5;
+    width: 281px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px rgba(255, 255, 255, 0.336);
+}
 
 //Mars
-
+.btn-tablet-container-ma{
+background: #D14C32;
+    width: 281px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px rgba(255, 255, 255, 0.336);
+}
 //Jupiter 
-
+.btn-tablet-container-j{
+ background: #D83A34;
+    width: 281px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px rgba(255, 255, 255, 0.336);
+}
 //Saturn 
-
+.btn-tablet-container-s{
+background: #CD5120;
+    width: 281px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px rgba(255, 255, 255, 0.336);   
+}
 //Uranus
-
+.btn-tablet-container-u{
+background: #1EC1A2;
+    width: 281px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px rgba(255, 255, 255, 0.336);   
+}
 //Neptune
+.btn-tablet-container-n{
+background: #2D68F0;
+    width: 281px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px rgba(255, 255, 255, 0.336);   
+}
 }
 
 @media screen and (min-width: 1200px) {

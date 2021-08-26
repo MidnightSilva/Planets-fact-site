@@ -1,6 +1,11 @@
 @use "sass:map";
 @import "./Variables.scss";
 
+
+.Layout{
+        display: flex;
+    flex-direction: column;
+}
 //Image 
 .planet{
 height: $Planet-height-mobile;
@@ -130,7 +135,7 @@ letter-spacing: -0.5px;
 }
 @media screen and (min-width: 1200px) {
 .Layout{
-    display: flex;
+    flex-direction: row;
 }
 
 }

@@ -55,7 +55,7 @@ const Earth = (props) => {
                 <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
               ))}
           </div>
-          <Buttons />
+          <Buttons className="btn-tablet-container-e" />
         </div>
       </div>
       <div className="planet-cards-container">
