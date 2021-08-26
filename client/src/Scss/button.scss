@@ -165,16 +165,23 @@ line-height: 10px;
 //Uranus
 
 //Neptune
-
-
-
-
-
-
-
 }
 
+@media screen and (min-width: 1200px) {
+.planet-des--btn-container {
+    flex-direction: column;
+           align-items: flex-end;
+}
+.btn-container-above-tablet {
+    align-self: flex-start;
+        align-self: center;
+          padding: 50px 3px;
+}
+.planet-des-wiki-container {
 
+    width: 67%;
+}
+}
 
 ///Desktop Media Queries 1440px 
 
