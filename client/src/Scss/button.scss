@@ -3,7 +3,8 @@
 .btn-container{
 overflow: visible;
 border-bottom: solid 1px rgba(255, 255, 255, 0.336);
-padding: 20px 24px;
+// padding: 20px 24px;
+padding: 6px 24px;
 display: flex;
 justify-content: space-around;
 font-family: $font-planet-card;
@@ -17,10 +18,14 @@ font-weight: bold;
 line-height: 10px;
 text-align: center;
 letter-spacing: 1.92857px;
+color: rgba(255, 255, 255, 0.336);;
 }
 .planet-btnShow{
-color: rgba(255, 255, 255, 0.336);;
-border-bottom:solid 1px #419EBB; 
+color: white;
+// border-bottom:solid 1px #419EBB; 
+    border-bottom: solid 8px #419EBB;
+    padding-bottom: 24px;
+margin: 29px 0px -7px 0px;
 letter-spacing: 1.92857px;
 }
 //buttons for tablet & above
