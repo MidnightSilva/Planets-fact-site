@@ -6,9 +6,9 @@ import venusInternal from "../assets/planet-venus-internal.svg";
 import venusSurface from "../assets/geology-venus.svg";
 import PlanetCards from "../components/PlanetCard";
 import MobileVenusBtn from "../Layout/Btns/MobileBtn/MobileVenusBtn";
-import Buttons from "../components/buttons";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
+import BtnVenus from "../Layout/Btns/Btns/BtnVenus";
 
 const Venus = () => {
   const { count } = useContext(PlanetContext);
@@ -35,7 +35,7 @@ const Venus = () => {
               (count === 2 && (
                 <PlanetDes
                   title="Venus"
-                  des="The similarity in size and density between Venus and Earth suggests they share a similar internal structure: a core, mantle, and crust. Like that of Earth, Venusian core is most likely at least partially liquid because the two planets have been cooling at about the same rate. similarity in size and density between Venus and Earth suggests they share a similar internal structure: a core, mantle, and crust. Like that of Earth, Venusian core is most likely at least partially liquid because the two planets have been cooling at about the same rate."
+                  des="Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle."
                 />
               )) ||
               (count === 3 && (
@@ -45,16 +45,16 @@ const Venus = () => {
                 />
               ))}
             {(count === 1 && (
-              <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+              <PlanetLink href="https://en.wikipedia.org/wiki/Venus" />
             )) ||
               (count === 2 && (
-                <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+                <PlanetLink href="https://en.wikipedia.org/wiki/Venus#Internal_structure" />
               )) ||
               (count === 3 && (
-                <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+                <PlanetLink href="https://en.wikipedia.org/wiki/Venus#Surface_geology" />
               ))}
           </div>
-          <Buttons className="btn-tablet-container-v" />
+          <BtnVenus />
         </div>
       </div>
       <div className="planet-cards-container">

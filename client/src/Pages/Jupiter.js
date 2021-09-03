@@ -6,9 +6,9 @@ import jupiterInternal from "../assets/planet-jupiter-internal.svg";
 import jupiterSurface from "../assets/geology-jupiter.svg";
 import PlanetCards from "../components/PlanetCard";
 import MobileJupiterBtn from "../Layout/Btns/MobileBtn/MobileJupiterBtn";
-import Buttons from "../components/buttons";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
+import BtnJupiter from "../Layout/Btns/Btns/BtnJuptier";
 
 
 
@@ -49,16 +49,16 @@ const Jupiter = () => {
                 />
               ))}
             {(count === 1 && (
-              <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+              <PlanetLink href="https://en.wikipedia.org/wiki/Jupiter" />
             )) ||
               (count === 2 && (
-                <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+                <PlanetLink href="https://en.wikipedia.org/wiki/Jupiter#Internal_structure" />
               )) ||
               (count === 3 && (
-                <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+                <PlanetLink href="https://en.wikipedia.org/wiki/Jupiter#Great_Red_Spot_and_other_vortices" />
               ))}
           </div>
-          <Buttons className="btn-tablet-container-j" />
+          <BtnJupiter />
         </div>
       </div>
       <div className="planet-cards-container">

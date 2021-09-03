@@ -6,7 +6,7 @@ import uranusInternal from "../assets/planet-uranus-internal.svg";
 import uranusSurface from "../assets/geology-uranus.svg";
 import PlanetCards from "../components/PlanetCard";
 import MobileUranusBtn from "../Layout/Btns/MobileBtn/MobileUranusBtn";
-import Buttons from "../components/buttons";
+import BtnUranus from "../Layout/Btns/Btns/BtnUranus";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
 
@@ -44,16 +44,16 @@ const Uranus = () => {
                 />
               ))}
             {(count === 1 && (
-              <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+              <PlanetLink href="https://en.wikipedia.org/wiki/Uranus" />
             )) ||
               (count === 2 && (
-                <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+                <PlanetLink href="https://en.wikipedia.org/wiki/Uranus#Internal_structure" />
               )) ||
               (count === 3 && (
-                <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+                <PlanetLink href="https://en.wikipedia.org/wiki/Uranus#Atmosphere" />
               ))}
           </div>
-          <Buttons className="btn-tablet-container-u" />
+          <BtnUranus />
         </div>
       </div>
       <div className="planet-cards-container">

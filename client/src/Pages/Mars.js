@@ -6,7 +6,7 @@ import marsInternal from "../assets/planet-mars-internal.svg";
 import marsSurface from "../assets/geology-mars.svg";
 import PlanetCards from "../components/PlanetCard";
 import MobileMarsBtn from "../Layout/Btns/MobileBtn/MobileMarsBtn";
-import Buttons from "../components/buttons";
+import BtnMars from "../Layout/Btns/Btns/BtnMars";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
 
@@ -45,16 +45,16 @@ const { count } = useContext(PlanetContext);
                 />
               ))}
             {(count === 1 && (
-              <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+              <PlanetLink href="https://en.wikipedia.org/wiki/Mars" />
             )) ||
               (count === 2 && (
-                <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+                <PlanetLink href="https://en.wikipedia.org/wiki/Mars#Internal_structure" />
               )) ||
               (count === 3 && (
-                <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+                <PlanetLink href="https://en.wikipedia.org/wiki/Mars#Surface_geology" />
               ))}
           </div>
-          <Buttons className="btn-tablet-container-ma" />
+          <BtnMars />
         </div>
       </div>
       <div className="planet-cards-container">

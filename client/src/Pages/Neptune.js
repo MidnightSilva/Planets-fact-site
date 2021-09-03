@@ -6,7 +6,7 @@ import neptuneInternal from "../assets/planet-neptune-internal.svg";
 import neptuneSurface from "../assets/geology-neptune.svg";
 import PlanetCards from "../components/PlanetCard";
 import MobileNeptuneBtn from "../Layout/Btns/MobileBtn/MobileNeptuneBtn";
-import Buttons from "../components/buttons";
+import BtnNeptune from "../Layout/Btns/Btns/BtnNeptune";
 import { useContext} from "react";
 import { PlanetContext } from "../Context/AppContext";
 const Neptune = () => {
@@ -45,16 +45,16 @@ const Neptune = () => {
                 />
               ))}
             {(count === 1 && (
-              <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+              <PlanetLink href="https://en.wikipedia.org/wiki/Neptune" />
             )) ||
               (count === 2 && (
-                <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+                <PlanetLink href="https://en.wikipedia.org/wiki/Neptune#Internal_structure" />
               )) ||
               (count === 3 && (
-                <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+                <PlanetLink href="https://en.wikipedia.org/wiki/Neptune#Atmosphere" />
               ))}
           </div>
-          <Buttons className="btn-tablet-container-n" />
+          <BtnNeptune />
         </div>
       </div>
       <div className="planet-cards-container">

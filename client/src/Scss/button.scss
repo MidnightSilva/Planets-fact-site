@@ -287,18 +287,18 @@ line-height: 10px;
 
 //Venus 
 .btn-tablet-container-v{
-background: #EDA249;
-
     width: 281px;
     height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    border: solid 1px rgba(255, 255, 255, 0.336);   
-    
-
+    border: solid 1px rgba(255, 255, 255, 0.336);
 }
+.btn-tablet-container-v.Show{
+  background: #EDA249;
+}
+
 //earth 
 .btn-tablet-container-e{
     width: 281px;
@@ -310,12 +310,11 @@ background: #EDA249;
     border: solid 1px rgba(255, 255, 255, 0.336);
 }
 .btn-tablet-container-e.Show{
-      background: #6D2ED5;
+    background: #6D2ED5;
 }
 
 //Mars
 .btn-tablet-container-ma{
-background: #D14C32;
     width: 281px;
     height: 40px;
     display: flex;
@@ -323,10 +322,12 @@ background: #D14C32;
     justify-content: flex-start;
     align-items: center;
     border: solid 1px rgba(255, 255, 255, 0.336);
+}
+.btn-tablet-container-ma.Show{
+background: #D14C32;
 }
 //Jupiter 
 .btn-tablet-container-j{
- background: #D83A34;
     width: 281px;
     height: 40px;
     display: flex;
@@ -335,9 +336,11 @@ background: #D14C32;
     align-items: center;
     border: solid 1px rgba(255, 255, 255, 0.336);
 }
+.btn-tablet-container-j.Show{
+ background: #D83A34;
+}
 //Saturn 
 .btn-tablet-container-s{
-background: #CD5120;
     width: 281px;
     height: 40px;
     display: flex;
@@ -345,10 +348,12 @@ background: #CD5120;
     justify-content: flex-start;
     align-items: center;
     border: solid 1px rgba(255, 255, 255, 0.336);   
+}
+.btn-tablet-container-s.Show{
+background: #CD5120; 
 }
 //Uranus
 .btn-tablet-container-u{
-background: #1EC1A2;
     width: 281px;
     height: 40px;
     display: flex;
@@ -357,9 +362,11 @@ background: #1EC1A2;
     align-items: center;
     border: solid 1px rgba(255, 255, 255, 0.336);   
 }
+.btn-tablet-container-u.Show{
+background: #1EC1A2; 
+}
 //Neptune
 .btn-tablet-container-n{
-background: #2D68F0;
     width: 281px;
     height: 40px;
     display: flex;
@@ -367,6 +374,9 @@ background: #2D68F0;
     justify-content: flex-start;
     align-items: center;
     border: solid 1px rgba(255, 255, 255, 0.336);   
+}
+.btn-tablet-container-n.Show{
+background: #2D68F0;
 }
 }
 

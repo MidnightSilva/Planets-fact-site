@@ -6,7 +6,7 @@ import saturnInternal from "../assets/planet-saturn-internal.svg";
 import saturnSurface from "../assets/geology-saturn.svg";
 import PlanetCards from "../components/PlanetCard";
 import MobileSaturnBtn from "../Layout/Btns/MobileBtn/MobileSaturnBtn";
-import Buttons from "../components/buttons";
+import BtnSaturn from "../Layout/Btns/Btns/BtnSaturn";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
 
@@ -45,16 +45,16 @@ const Saturn = () => {
                 />
               ))}
             {(count === 1 && (
-              <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)" />
+              <PlanetLink href="https://en.wikipedia.org/wiki/Saturn" />
             )) ||
               (count === 2 && (
-                <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" />
+                <PlanetLink href="https://en.wikipedia.org/wiki/Saturn#Internal_structure" />
               )) ||
               (count === 3 && (
-                <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
+                <PlanetLink href="https://en.wikipedia.org/wiki/Saturn#Atmosphere" />
               ))}
           </div>
-          <Buttons className="btn-tablet-container-s" />
+          <BtnSaturn className="btn-tablet-container-s" />
         </div>
       </div>
       <div className="planet-cards-container">
