@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { PlanetContext } from "../Context/AppContext";
+import { PlanetContext } from "../../../Context/AppContext";
 
-function Buttons(props) {
+function BtnEarth(props) {
   const {
     handleBtnToggleSurface,
     handleBtnToggleStructure,
@@ -13,9 +13,7 @@ function Buttons(props) {
   return (
     <div className="btn-container-above-tablet">
       <div
-        className={`btn-tablet-container-m ${
-          Overview ? "Show" : ""
-        }`}
+        className={`btn-tablet-container-e ${Overview ? "Show" : ""}`}
         onClick={() => handleBtnToggleOverview(!handleBtnToggleOverview)}
       >
         <span>01</span>
@@ -23,9 +21,7 @@ function Buttons(props) {
       </div>
 
       <div
-        className={`btn-tablet-container-m  ${
-          Structure ? "" : "Show"
-        }`}
+        className={`btn-tablet-container-e  ${Structure ? "" : "Show"}`}
         onClick={() => handleBtnToggleStructure(!handleBtnToggleStructure)}
       >
         <span>02</span>
@@ -33,7 +29,7 @@ function Buttons(props) {
       </div>
 
       <div
-        className={`btn-tablet-container-m  ${Surface ? "Show" : ""}`}
+        className={`btn-tablet-container-e  ${Surface ? "Show" : ""}`}
         onClick={() => handleBtnToggleSurface(!handleBtnToggleSurface)}
       >
         <span>03</span>
@@ -44,4 +40,4 @@ function Buttons(props) {
   );
 }
 
-export default Buttons;
+export default BtnEarth;

@@ -5,7 +5,7 @@ import neptune from "../assets/planet-neptune.svg";
 import neptuneInternal from "../assets/planet-neptune-internal.svg";
 import neptuneSurface from "../assets/geology-neptune.svg";
 import PlanetCards from "../components/PlanetCard";
-import MobileButtons from "../components/mobileButtons";
+import MobileNeptuneBtn from "../Layout/Btns/MobileBtn/MobileNeptuneBtn";
 import Buttons from "../components/buttons";
 import { useContext} from "react";
 import { PlanetContext } from "../Context/AppContext";
@@ -16,7 +16,7 @@ const Neptune = () => {
   return (
     <div className="page-container">
       <div className="Layout">
-        <MobileButtons />
+        <MobileNeptuneBtn />
         {(count === 1 && <PlanetImage className="planet" image={neptune} />) ||
           (count === 2 && (
             <PlanetImage className="planet" image={neptuneInternal} />

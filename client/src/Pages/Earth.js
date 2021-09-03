@@ -7,8 +7,8 @@ import earthSurface from "../assets/geology-earth.svg";
 import PlanetCards from "../components/PlanetCard";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
-import MobileButtons from "../components/mobileButtons";
-import Buttons from "../components/buttons";
+import MobileEarthBtn from "../Layout/Btns/MobileBtn/MobileEarthBtn";
+import BtnEarth from "../Layout/Btns/Btns/BtnEarth";
 
 const Earth = (props) => {
   const { count } = useContext(PlanetContext);
@@ -17,7 +17,7 @@ const Earth = (props) => {
     <div className="page-container">
       {/* // buttons could be made into a component and import in here twice  */}
       <div className="Layout">
-        <MobileButtons />
+        <MobileEarthBtn />
         {(count === 1 && <PlanetImage className="planet" image={earth} />) ||
           (count === 2 && (
             <PlanetImage className="planet" image={earthInternal} />
@@ -55,7 +55,7 @@ const Earth = (props) => {
                 <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
               ))}
           </div>
-          <Buttons className="btn-tablet-container-e" />
+          <BtnEarth />
         </div>
       </div>
       <div className="planet-cards-container">

@@ -5,7 +5,7 @@ import saturn from "../assets/planet-saturn.svg";
 import saturnInternal from "../assets/planet-saturn-internal.svg";
 import saturnSurface from "../assets/geology-saturn.svg";
 import PlanetCards from "../components/PlanetCard";
-import MobileButtons from "../components/mobileButtons";
+import MobileSaturnBtn from "../Layout/Btns/MobileBtn/MobileSaturnBtn";
 import Buttons from "../components/buttons";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
@@ -16,7 +16,7 @@ const Saturn = () => {
   return (
     <div className="page-container">
       <div className="Layout">
-        <MobileButtons />
+        <MobileSaturnBtn />
         {(count === 1 && <PlanetImage className="planet" image={saturn} />) ||
           (count === 2 && (
             <PlanetImage className="planet" image={saturnInternal} />

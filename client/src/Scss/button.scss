@@ -12,6 +12,9 @@ font-family: $font-planet-card;
 .btn-container-above-tablet{
 visibility: hidden;
 }
+
+
+//mercury 
 .planet-btn{
 font-size: 12px;
 font-weight: bold;
@@ -20,14 +23,138 @@ text-align: center;
 letter-spacing: 1.92857px;
 color: rgba(255, 255, 255, 0.336);;
 }
+
 .planet-btnShow{
 color: white;
-// border-bottom:solid 1px #419EBB; 
-    border-bottom: solid 8px #419EBB;
-    padding-bottom: 24px;
+border-bottom: solid 8px #419EBB;
+padding-bottom: 24px;
 margin: 29px 0px -7px 0px;
 letter-spacing: 1.92857px;
 }
+//venus
+.planet-btn-v{
+font-size: 12px;
+font-weight: bold;
+line-height: 10px;
+text-align: center;
+letter-spacing: 1.92857px;
+color: rgba(255, 255, 255, 0.336);;
+}
+.planet-btn-vShow{
+color: white;
+border-bottom: solid 8px #EDA249;
+padding-bottom: 24px;
+margin: 29px 0px -7px 0px;
+letter-spacing: 1.92857px;
+}
+
+
+//earth 
+.planet-btn-e{
+font-size: 12px;
+font-weight: bold;
+line-height: 10px;
+text-align: center;
+letter-spacing: 1.92857px;
+color: rgba(255, 255, 255, 0.336);;
+}
+.planet-btn-eShow{
+color: white;
+border-bottom: solid 8px #6D2ED5;
+padding-bottom: 24px;
+margin: 29px 0px -7px 0px;
+letter-spacing: 1.92857px;
+}
+
+// mars
+.planet-btn-ma{
+font-size: 12px;
+font-weight: bold;
+line-height: 10px;
+text-align: center;
+letter-spacing: 1.92857px;
+color: rgba(255, 255, 255, 0.336);;
+}
+.planet-btn-maShow{
+color: white;
+border-bottom: solid 8px #D14C32;
+padding-bottom: 24px;
+margin: 29px 0px -7px 0px;
+letter-spacing: 1.92857px;
+}
+
+//jupiterD83A34
+.planet-btn-j{
+font-size: 12px;
+font-weight: bold;
+line-height: 10px;
+text-align: center;
+letter-spacing: 1.92857px;
+color: rgba(255, 255, 255, 0.336);;
+}
+
+.planet-btn-jShow{
+color: white;
+border-bottom: solid 8px #D83A34;
+padding-bottom: 24px;
+margin: 29px 0px -7px 0px;
+letter-spacing: 1.92857px;
+}
+
+//saturn
+.planet-btn-s{
+font-size: 12px;
+font-weight: bold;
+line-height: 10px;
+text-align: center;
+letter-spacing: 1.92857px;
+color: rgba(255, 255, 255, 0.336);;
+}
+.planet-btn-sShow{
+color: white;
+border-bottom: solid 8px #CD5120;
+padding-bottom: 24px;
+margin: 29px 0px -7px 0px;
+letter-spacing: 1.92857px;
+}
+
+//uranus
+.planet-btn-u{
+font-size: 12px;
+font-weight: bold;
+line-height: 10px;
+text-align: center;
+letter-spacing: 1.92857px;
+color: rgba(255, 255, 255, 0.336);;
+}
+.planet-btn-uShow{
+color: white;
+border-bottom: solid 8px #1EC1A2;
+padding-bottom: 24px;
+margin: 29px 0px -7px 0px;
+letter-spacing: 1.92857px;
+}
+
+//Neptune
+.planet-btn-n{
+font-size: 12px;
+font-weight: bold;
+line-height: 10px;
+text-align: center;
+letter-spacing: 1.92857px;
+color: rgba(255, 255, 255, 0.336);;
+}
+.planet-btn-nShow{
+color: white;
+border-bottom: solid 8px #2D68F0;
+padding-bottom: 24px;
+margin: 29px 0px -7px 0px;
+letter-spacing: 1.92857px;
+}
+
+
+
+
 //buttons for tablet & above
 .planet-btn-above-tablet{
 display: none;
@@ -36,15 +163,15 @@ display: none;
 display: none;
     
 }
-.planet-btn .Show{
-color: white;
-font-size: 12px;
-font-weight: bold;
-line-height: 10px;
-text-align: center;
-letter-spacing: 1.92857px;
-border-bottom:solid 1px #419EBB; 
-}
+// .planet-btn .Show{
+// color: white;
+// font-size: 12px;
+// font-weight: bold;
+// line-height: 10px;
+// text-align: center;
+// letter-spacing: 1.92857px;
+// border-bottom:solid 1px #419EBB; 
+// }
 button{
     border-bottom:solid 1px #419EBB; 
 background: none;
@@ -146,7 +273,6 @@ line-height: 10px;
 // button color change 
 //mercury 
 .btn-tablet-container-m{
-    background: #419EBB;
     width: 281px;
     height: 40px;
     display: flex;
@@ -155,6 +281,10 @@ line-height: 10px;
     align-items: center;
     border: solid 1px rgba(255, 255, 255, 0.336);
 }
+.btn-tablet-container-m.Show{
+    background: #419EBB;
+}
+
 //Venus 
 .btn-tablet-container-v{
 background: #EDA249;
@@ -171,8 +301,6 @@ background: #EDA249;
 }
 //earth 
 .btn-tablet-container-e{
-
-      background: #6D2ED5;
     width: 281px;
     height: 40px;
     display: flex;
@@ -180,6 +308,9 @@ background: #EDA249;
     justify-content: flex-start;
     align-items: center;
     border: solid 1px rgba(255, 255, 255, 0.336);
+}
+.btn-tablet-container-e.Show{
+      background: #6D2ED5;
 }
 
 //Mars

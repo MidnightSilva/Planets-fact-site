@@ -5,7 +5,7 @@ import uranus from "../assets/planet-uranus.svg";
 import uranusInternal from "../assets/planet-uranus-internal.svg";
 import uranusSurface from "../assets/geology-uranus.svg";
 import PlanetCards from "../components/PlanetCard";
-import MobileButtons from "../components/mobileButtons";
+import MobileUranusBtn from "../Layout/Btns/MobileBtn/MobileUranusBtn";
 import Buttons from "../components/buttons";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
@@ -15,7 +15,7 @@ const Uranus = () => {
   return (
     <div className="page-container">
       <div className="Layout">
-        <MobileButtons />
+        <MobileUranusBtn />
         {(count === 1 && <PlanetImage className="planet" image={uranus} />) ||
           (count === 2 && (
             <PlanetImage className="planet" image={uranusInternal} />

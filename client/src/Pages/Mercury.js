@@ -10,10 +10,9 @@ import Buttons from "../components/buttons";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
 
+
 const Mercury = ( props ) => {
-  const {
-     count
-  } = useContext(PlanetContext);
+  const { count } = useContext(PlanetContext);
 
   return (
     <div className="page-container">
@@ -56,7 +55,7 @@ const Mercury = ( props ) => {
                 <PlanetLink href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" />
               ))}
           </div>
-          <Buttons className="btn-tablet-container-m" />
+          <Buttons/>
         </div>
       </div>
       <div className="planet-cards-container">

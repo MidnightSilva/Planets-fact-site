@@ -5,7 +5,7 @@ import mars from "../assets/planet-mars.svg";
 import marsInternal from "../assets/planet-mars-internal.svg";
 import marsSurface from "../assets/geology-mars.svg";
 import PlanetCards from "../components/PlanetCard";
-import MobileButtons from "../components/mobileButtons";
+import MobileMarsBtn from "../Layout/Btns/MobileBtn/MobileMarsBtn";
 import Buttons from "../components/buttons";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
@@ -16,7 +16,7 @@ const { count } = useContext(PlanetContext);
   return (
     <div className="page-container">
       <div className="Layout">
-        <MobileButtons />
+        <MobileMarsBtn />
         {(count === 1 && <PlanetImage className="planet" image={mars} />) ||
           (count === 2 && (
             <PlanetImage className="planet" image={marsInternal} />

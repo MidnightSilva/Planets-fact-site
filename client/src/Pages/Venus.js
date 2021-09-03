@@ -5,7 +5,7 @@ import venus from "../assets/planet-venus.svg";
 import venusInternal from "../assets/planet-venus-internal.svg";
 import venusSurface from "../assets/geology-venus.svg";
 import PlanetCards from "../components/PlanetCard";
-import MobileButtons from "../components/mobileButtons";
+import MobileVenusBtn from "../Layout/Btns/MobileBtn/MobileVenusBtn";
 import Buttons from "../components/buttons";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
@@ -16,7 +16,7 @@ const Venus = () => {
   return (
     <div className="page-container">
       <div className="Layout">
-        <MobileButtons />
+        <MobileVenusBtn />
         {(count === 1 && <PlanetImage className="planet" image={venus} />) ||
           (count === 2 && (
             <PlanetImage className="planet" image={venusInternal} />

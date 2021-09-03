@@ -5,7 +5,7 @@ import jupiter from "../assets/planet-jupiter.svg";
 import jupiterInternal from "../assets/planet-jupiter-internal.svg";
 import jupiterSurface from "../assets/geology-jupiter.svg";
 import PlanetCards from "../components/PlanetCard";
-import MobileButtons from "../components/mobileButtons";
+import MobileJupiterBtn from "../Layout/Btns/MobileBtn/MobileJupiterBtn";
 import Buttons from "../components/buttons";
 import { useContext } from "react";
 import { PlanetContext } from "../Context/AppContext";
@@ -20,7 +20,7 @@ const Jupiter = () => {
   return (
     <div className="page-container">
       <div className="Layout">
-        <MobileButtons />
+        <MobileJupiterBtn />
         {(count === 1 && <PlanetImage className="planet" image={jupiter} />) ||
           (count === 2 && (
             <PlanetImage className="planet" image={jupiterInternal} />
